@@ -1,0 +1,43 @@
+\subsection{Category theory}
+
+\begin{mydef}
+A \textit{category} $\cat{C}$ is given by the data of :
+\begin{itemize}
+\item[1.] a class Ob$(\cat{C})$, called the \textit{class of objects} of $\cat{C}$,
+\item[2.] for every couple of objects $(x,y)$ of $\cat{C}$, a class $\Hom_\cat{C}(x,y)$, called the \textit{class of morphisms} from $x$ to $y$,
+\item[3.] for every triplet of objects $(x,y,z)$ of $\cat{C}$, a function 
+\begin{center}
+	$\fonction{\text{comp}_{(x,y,z)}}{\Hom_\cat{C}(x,y) \times \Hom_\cat{C}(y,z)}{\Hom_\cat{C}(x,z)}{(f,g)}{g\circ f}$
+\end{center}
+satisfying the following proprerties :
+\begin{itemize}
+\item[a.] (\textit{Associative law}) for every quartet of objects $(w,x,y,z)$ of $\cat{C}$, if $(f,g,h)\in \Hom_\cat{C}(w,x) \times \Hom_\cat{C}(x,y) \times \Hom_\cat{C}(y,z)$, then $(h\circ g)\circ f = h\circ (g\circ f)$,
+\item[b.] (\textit{Identities}) for every object $x$ of $\cat{C}$, there exists an element $1_x$ of $\Hom_\cat{C}(x,x)$, so that for every couple of objects $(w,y)$ and every morphisms $(f,g)\in \Hom_\cat{C}(w,x)\times \Hom_\cat{C}(x,y)$, then $1_x\circ f = f$ and $g\circ 1_x = g$.\\
+
+\end{itemize}
+$g \circ f$ is called the \textit{composition} of $g$ with $f$.
+\end{itemize}
+
+\end{mydef}
+
+
+\begin{myrem}
+\begin{itemize}
+\item[1.] We will use the following notations : $x\in \text{Ob}(\cat{C})$ if $x$ in an object of $\cat{C}$, $f: x\to y$ if $f$ is an element of $\Hom_\cat{C}(x,y)$.
+\item[2.] If $f:x\to y$, $x$ is called the \textit{domain} or \textit{source} of $f$ and $y$ the \textit{codomain} or \textit{target} of $f$.
+\item[3.] For our purpose, it is sufficient to consider that for every $(x,y)\in \text{Ob}(\cat{C})^2$, $\Hom_\cat{C}(x,y)$ is a set. In this case, the category is said to be \textit{locally small}.
+\end{itemize}
+\end{myrem}
+
+\begin{mydef}
+Let $\cat{C}$ be a category.\\
+A category $\cat{D}$ is said to be a \textit{subcategory} of $\cat{C}$ if the following are satisfied :
+\begin{itemize}
+\item[1.] every object of $\cat{D}$ is an object of $\cat{C}$,
+\item[2.] for every $(x,y)\in \text{Ob}(\cat{D})^2$, then $\Hom_\cat{D}(x,y) \subseteq \Hom_\cat{C}(x,y)$,
+\item[3.] for every $x\in\text{Ob}(\cat{D})$, then $1_x \in \Hom_\cat{D}(x,x)$,
+\item[4.] for every $(x,y,z)\in\text{Ob}(\cat{D})^3$, every $(f,g)\in\Hom_\cat{D}(x,y)\times \Hom_\cat{D}(y,z)$, then $g\circ f \in \Hom_\cat{D}(x,z)$.
+\end{itemize}
+$\cat{D}$ is said to be a \textit{full subcategory} of $\cat{C}$ if in addition, for every $(x,y)\in \text{Ob}(\cat{D})^2$, then $\Hom_\cat{D}(x,y) = \Hom_\cat{C}(x,y)$.
+\end{mydef}
+

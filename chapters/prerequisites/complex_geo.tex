@@ -1,0 +1,142 @@
+\subsection{Complex geometry}
+
+\begin{mydef}
+Let $X$ be a differentiable manifold of dimension $2n$.\\
+An \textit{holomorphic atlas} is a set $\{(U_i,\varphi_i),i\in I\}$ where $X = \bigcup_{i\in I} U_i$ is an open cover and $\varphi : U_i \to \CC^n$ are homeomorphism on their image, such that for all $(i,j)\in I^2$, the \textit{transition map} $\varphi_j \circ \varphi_i^{-1} : \varphi_i(U_i \cap U_j) \to \varphi_j(U_i \cap U_j)$ is holomorphic. 
+
+\smallskip
+Such a couple $(U_i,\varphi_i)$ is called a \textit{local coordinate system}, or just \textit{coordinates}.
+
+\smallskip
+We say that two holomorpic atlases $\{(U_i,\varphi_i),i\in I\}$ and $\{(\tilde{U_j},\tilde{\varphi_j}),j\in J\}$ are \textit{equivalent} if for all $(i,j)\in I\times J, \tilde{\varphi_j} \circ \varphi_i^{-1} : \varphi_i(U_i \cap \tilde{U_j}) \to \tilde{\varphi_j}(U_i \cap \tilde{U_j})$.
+\end{mydef}
+
+\begin{mydef}
+A \textit{complex manifold of dimension $n$} is a real manifold $X$ of dimension $2n$ endowed with an equivalence class of holomorphic atlases. 
+\end{mydef}
+
+\begin{myrem}
+In the following, unless explicitly stated otherwise, the complex manifold will be endowed with an representant of the equivalente class, denoted by $\{(U_i,\varphi_i),i\in I\}$.
+\end{myrem}
+
+\begin{mydef}
+Let $X$ be a complex manifold and $f : X \to \CC$.\\
+We say that $f$ is \textit{holomorphic} if for all local coordinates $(U,\varphi), f\circ \varphi : \varphi(U) \to \CC$ is holomorphic.
+\end{mydef}
+
+\begin{mydef}
+Let $X$ be a complex manifold.\\
+We denote by $\holo_X$ the sheaf of holomorphic function on $X$, \textit{ie} $\holo_X : U \mapsto \{f:U \to \CC, f\text{ holomorphic}\}$.
+\end{mydef}
+
+\begin{myrem}
+$\holo_{X,x}$ will denote the stalk of $\holo_X$ at $x$. It coincides with the germs of holomorphic functions at $x$. \textit{Via} local coordinates $(U,\varphi)$, with $\varphi(x_*)=0$ for some $x_*\in U$, we have an isomorphism $\holo_{X,x} \simeq \holo_{\CC^n,0}$. It is an integral domain, and we denote by $Q(\holo_{X,x})$ the quotient field associated.
+\end{myrem}
+
+More generally, if the codomain is also a complex manifold, we have the following definition :
+
+\begin{mydef}
+Let $X$ and $Y$ be complex manifolds and $f : X \to Y$ continuous.\\
+We say that $f$ is \textit{holomorphic} if for all local coordinates $(U,\varphi)$ on $X$ and $(U',\varphi')$ on $Y$, $\varphi'\circ f\circ \varphi : \varphi(U \cap f^{-1}(U')) \to \varphi'(U')$ is holomorphic.
+\end{mydef}
+
+\begin{mydef}
+Let $X$ be a complex manifold.\\
+A \textit{meromorphic function} on $X$ is a map $f : X \to \bigsqcup_{x\in X} Q(\holo_{X,x})$ so that, for all $x_* \in X$, there exists an open neighborhood $U \subset X$ of $x_*$ and $g,h \in \holo_U$ verifying : $(\forall x\in U), ~f_x = \frac{g}{h}$.
+
+\smallskip
+The sheaf of meromorphic functions is denoted $\mero_X$.
+\end{mydef}
+
+\begin{myrem}
+If $U\subset X$ is an connected open subset, then $\mero_X(U)$ is a field, and if $X$ itself is connected, $\mero(X) = \mero_X(X)$ is called the function field of $X$.
+\end{myrem}
+
+
+\begin{mydef}
+Let $X$ be a complex manifold and $r$ a positive integer.\\
+A \textit{holomorphic vector bundle} or rank $r$ on $X$ is a complex manifold $E$ equipped with a holomorphic map $\pi : E \to X$ such that :
+\begin{itemize}
+\item[1.] for all $p \in X$, the \textit{fiber} $E_p := \pi^{-1}(p)$ is a complex vector space of dimension $r$,
+\item[2.] there exists an open covering $X = \bigcup_{i\in I} U_i$ and biholomorphic maps $\psi_i : \pi^{-1}(U_i) \to U_i \times \CC^r$, called the \textit{trivialization maps}, satisfying :
+\begin{itemize}
+\item[a.] the following diagram commutes :
+\begin{center}
+
+\begin{tikzcd}[column sep=small]
+\pi^{-1}(U_i) \arrow[rr, "\psi_i"] \arrow[dr, "\pi"] & & U_i \times \CC^r \arrow[dl,"\text{pr}_1"]\\
+& U_i &
+\end{tikzcd}
+
+\end{center}
+\item[b.] The induced map $E_p \to \CC^r$ for any $p\in U_i$ is $\CC$-linear.
+\end{itemize}
+\end{itemize}
+
+\smallskip
+If $r=1$, we say that $(E,\pi)$ is a \textit{line bundle}.
+\end{mydef}
+
+\begin{myrem}
+The travialization maps induce linear isomorphisms $\psi_{i,j} = \psi_i \circ \psi_j^{-1} :U_i \cap U_j \to \GL_r(\CC)$, and the collection $\{\psi_{i,j},i,j\in I\}$ is called a cocycle.\\
+In particular, it verifies the conditions :
+\begin{itemize}
+\item[i.] $\psi_{i,i} = \text{id}_{U_i}$,
+\item[ii.] $\psi_{j,k}\circ \psi_{i,j} = \psi_{i,k}$.
+\end{itemize}
+\end{myrem}
+
+
+\begin{myprop}
+Let $X$ be a complex manifold and let $r$ be a positive integer.\\
+The categories $\vectbun^r(X)$ and $\locfree_r(X)$ are equivalent.
+\end{myprop}
+
+\begin{mydemo}
+We define 
+\begin{center}
+$\fonction{\sheaf}{\vectbun_r(X)}{\locfree_r(X)}{E}{\sheaf_E}$,
+\end{center}
+where $\sheaf_E$ is the sheaf of sections of $E$. It is well defined by ??.\\
+It is a functor : given a morphism of vector bundles $f:E_1 \to E_2$, we define for each open set $U$ of $X$ the function
+\begin{center}
+$\fonction{\varphi_U}{\sheaf_1(U)}{\sheaf_2(U)}{s}{f\circ s}$.
+\end{center}
+$\varphi$ clearly defines a morphism of sheaves.\\
+In order to construct a quasi-inverse, let $\sheaf \in \mathcal{S}_X$ and $\psi : \sheaf(U_i) \to \holo_{U_i}{\vphantom{\holo}}^{\oplus r}$ local trivialisations on an open cover $\{U_i,i \in I\}$ of $X$.
+\end{mydemo}
+
+\begin{mydef}
+Let $\erond$ be a locally free $\holo_X$-modules.\\
+A \textit{connection} is a $\CC$-linear application $\nabla : \erond \to \erond \otimes_{\holo_X} \Omega_X^1$ satisfying the \textit{Liebniz relation} : for any local sections $s$ and local function $f$, then
+\begin{center}
+$\nabla(fs) = df \otimes s + f\nabla(s)$.
+\end{center}
+In particular, it induces, for each integer $k >0$, a $\CC$-linear map
+\begin{center}
+$\fonction{\nabla^{(k)}}{\erond \otimes_{\holo_X} \Omega_X^k}{\erond \otimes_{\holo_X} \Omega_X^{k+1}}{s \otimes \omega}{(-1)^k\nabla s \wedge \omega + s \otimes dw}$
+\end{center}
+A connection $\nabla$ is said to be \textit{flat} (or \textit{integrable}) if the \textit{curvature} $K := \nabla^{(1)} \circ \nabla$ is zero.
+\end{mydef}
+
+\begin{myrem}
+In dimension 1, we have $\Omega_X^2 = 0$, so all connections are flat.
+\end{myrem}
+
+\begin{mydef}
+We define the category $\locfreenabla(X)$ with 
+\begin{itemize}
+\item locally free $\holo_X$-modules equipped with flat connections as objects,
+\item morphisms of $\holo_X$-modules $\varphi : \erond_1 \to \erond_2$ making 
+\begin{center}
+\begin{tikzcd}
+\erond_1 \arrow[r, "\nabla_1"] \arrow[d, "\varphi"]
+& \erond_1 \otimes_{\holo_X} \Omega_X^1 \ \arrow[d, "\varphi \otimes 1"] \\
+\erond_2 \arrow[r, "\nabla_2"]
+& \erond_2 \otimes_{\holo_X} \Omega_X^1
+\end{tikzcd}
+\end{center}
+commutes, as morphisms between $(\erond_1,\nabla_1)$ and $(\erond_2,\nabla_2)$.
+\end{itemize}
+
+\end{mydef}

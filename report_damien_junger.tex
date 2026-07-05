@@ -1,0 +1,518 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage[french]{babel}
+
+
+
+\usepackage[style=alphabetic,backend=biber,giveninits=true]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage[nottoc]{tocbibind}
+
+
+\usepackage{etoolbox} 
+
+\usepackage{epigraph}
+
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{pstricks-add}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{patterns} % Pour les styles de traits
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{ mathrsfs }
+\usepackage{tikz-cd}
+\usepackage{ stmaryrd }
+\usepackage{cancel}
+\usepackage{enumitem}
+\usetikzlibrary{patterns,patterns.meta}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{comment}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+
+
+
+
+
+
+\textwidth=18cm
+\textheight=24cm
+\oddsidemargin = -1truecm
+\topmargin =-2truecm
+\headsep =1truecm
+\reversemarginpar
+\marginparsep = -2cm
+\parindent = 0truecm
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+
+%\usepackage{epsfig}
+
+\tolerance=1000
+\emergencystretch=1em
+
+
+
+\pagestyle{plain}
+\newcommand{\abs}[1]{ \left| #1 \right|}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\rg}{\text{rg}}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\Vect}{\text{Vect}}
+\newcommand{\diam}{\text{diam}}
+\newcommand{\QQb}{\overline{\mathbb{Q}}}
+\newcommand{\R}{\textbf{R}}
+\newcommand{\N}{\textbf{N}}
+%\newcommand{\CC}{\textbf{C}}
+\newcommand{\Z}{\textbf{Z}}
+\newcommand{\Q}{\textbf{Q}}
+\newcommand{\enum}[3]{#1_{#2}, \dots , #1_{#3}}
+\newcommand{\dinf}{\delta_\infty}
+\newcommand{\tuple}[2]{(#1_1, \dots, #1_{#2})}
+
+\newcommand{\fonction}[5]{%
+\displaystyle
+\begin{array}{rcll}
+#1 : & #2 & \longrightarrow #3 \\
+   & #4 & \longmapsto      #5
+\end{array}
+}
+
+
+\newcommand{\Conf}{\mbox{Conf }}
+\newcommand{\Is}{\mbox{Is }}
+\newcommand{\ad}{\text{ad }}
+\newcommand{\ho}{\text{Hom}}
+\newcommand{\Mon}{\text{Mon}}
+\newcommand{\Ad}{\text{Ad }}
+\newcommand{\Aut}{\text{Aut }}
+\newcommand{\rk}{\text{rk }}
+\newcommand{\Hol}{\text{Hol}}
+\newcommand{\vol}{\text{Vol}}
+\newcommand{\Mat}{\text{Mat}}
+%% \newcommand{\dim}{\text{dim }}
+\newcommand{\Exp}{\text{Exp}}
+%\newcommand{\dim}{\text{dim}}
+\newcommand{\Res}{\text{Res}}
+
+\newcommand{\SL}{\text{SL}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\PSL}{\text{PSL}}
+\newcommand{\PGL}{\text{PGL}}
+\newcommand{\SO}{\text{SO}}
+\newcommand{\CO}{\text{CO}}
+
+\newcommand{\ds}{\ensuremath{\delta_{\sigma}}}
+
+\newcommand{\lieo}{\ensuremath{\mathfrak{o}}}
+\newcommand{\liek}{\ensuremath{\mathfrak{k}}}
+\newcommand{\liep}{\ensuremath{\mathfrak{p}}}
+\newcommand{\lieb}{\ensuremath{\mathfrak{b}}}
+\newcommand{\lieg}{\ensuremath{\mathfrak{g}}}
+\newcommand{\lien}{\ensuremath{\mathfrak{n}}}
+\newcommand{\liel}{\ensuremath{\mathfrak{l}}}
+\newcommand{\liea}{\ensuremath{\mathfrak{a}}}
+\newcommand{\liem}{\ensuremath{\mathfrak{m}}}
+\newcommand{\liez}{\ensuremath{\mathfrak{z}}}
+\newcommand{\lieh}{\ensuremath{\mathfrak{h}}}
+\newcommand{\lies}{\ensuremath{\mathfrak{s}}}
+\newcommand{\lier}{\ensuremath{\mathfrak{r}}}
+\newcommand{\lieu}{\ensuremath{\mathfrak{u}}}
+
+\newtheoremstyle{remark}%
+  {3pt}{3pt}{}{}{\bfseries}{.}{ }{} % Personnalisation
+\theoremstyle{remark}
+\newtheorem*{demo}{Démonstration}
+
+
+\def\e{\varepsilon}
+
+\def\d{\displaystyle}
+\newcommand{\RM}{\mbox{\bf R}}
+\newcommand{\CM}{\mbox{\bf C}}
+\newcommand{\NM}{\mbox{\bf N}} 
+\newcommand{\cB}{\mathcal B}
+
+
+\usepackage{csquotes}
+
+\usepackage{graphicx} % Required for inserting images
+
+%%%%changer de pages à chaque parties
+\usepackage{etoolbox}
+\pretocmd{\section}{\clearpage}{}{}
+%%%%% edit des theo
+
+%%%%%%% edit des paragraphes
+
+\titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}
+  {\theparagraph}
+  {1em}
+  {\uline}
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
+\titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{1ex plus .2ex minus .2ex}{1em}
+
+% Compteurs liés à la section
+\newcounter{definition}[section]
+\newcounter{theoreme}[section]
+\newcounter{exemple}[section]
+
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+\renewcommand{\thetheoreme}{\thesection.\arabic{theoreme}}
+\renewcommand{\theexemple}{\thesection.\arabic{exemple}}
+
+
+
+%%%%%%%%%%%%%%%%%%ù
+
+
+
+\mdfdefinestyle{preuveStyle}{
+  skipabove=0pt, skipbelow=3pt,
+  leftmargin=25pt, rightmargin=0pt,
+  innerleftmargin=6pt, innerrightmargin=5pt,
+  innertopmargin=5pt, innerbottommargin=5pt,
+  topline=false, rightline=false, bottomline=false, leftline=true,
+  linecolor=red, linewidth=1pt,
+  frametitleaboveskip=0pt,
+  frametitlebelowskip=5pt
+}
+
+
+
+\mdfdefinestyle{theoremStyle}{
+  skipabove=6pt, skipbelow=6pt,
+  leftmargin=14pt, rightmargin=0pt,
+  innerleftmargin=5pt, innerrightmargin=5pt,
+  innertopmargin=6pt, innerbottommargin=6pt,
+  linecolor=green!60!black, linewidth=2pt,
+  topline=false, rightline=false, bottomline=false, leftline=true,
+  backgroundcolor=white
+}
+
+
+\mdfdefinestyle{lemmeStyle}{
+  skipabove=5pt, skipbelow=5pt,
+  leftmargin=14pt, rightmargin=0pt,
+  innerleftmargin=5pt, innerrightmargin=5pt,
+  innertopmargin=3pt, innerbottommargin=3pt,
+  linecolor=green!60!black, linewidth=1pt,
+  topline=false, rightline=false, bottomline=false, leftline=true,
+  backgroundcolor=white
+}
+
+
+
+\mdfdefinestyle{definitionStyle}{
+  skipabove=6pt, skipbelow=6pt,
+  leftmargin=14pt, rightmargin=0pt,
+  innerleftmargin=5pt, innerrightmargin=5pt,
+  innertopmargin=3pt, innerbottommargin=3pt,
+  linecolor=blue!70!black, linewidth=2pt,
+  topline=false, rightline=false, bottomline=false, leftline=true,
+  backgroundcolor=white
+}
+
+\mdfdefinestyle{exampleStyle}{
+  skipabove=6pt, skipbelow=6pt,
+  leftmargin=14pt, rightmargin=0pt,
+  innerleftmargin=5pt, innerrightmargin=5pt,
+  innertopmargin=3pt, innerbottommargin=3pt,
+  linecolor=black!60, linewidth=1pt,
+  topline=false, rightline=false, bottomline=false, leftline=true,
+  backgroundcolor=white
+}
+
+
+
+%%%%%%%%%%%%
+\newenvironment{mydemo}[1][]
+{
+  \Needspace{5\baselineskip}
+  \noindent\textsc{Proof\ifstrempty{#1}{}{~(#1)}}\par\vspace{4pt}
+  \begin{mdframed}[style=preuveStyle]
+ }
+{
+  \par\noindent\color{red}\hspace{-6pt}\vspace{-5pt}\rule{50pt}{0.5pt}~\color{black}\qed
+  \end{mdframed}\ignorespaces
+}
+
+
+%%%
+\newenvironment{mytheo}[1][]
+{
+  \refstepcounter{theoreme}
+  \begin{mdframed}[style=theoremStyle]
+  \textbf{Theorem~\thetheoreme\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+  \begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+
+\newenvironment{mylemme}[1][]
+{
+  \refstepcounter{theoreme}
+  \begin{mdframed}[style=lemmeStyle]
+  \textbf{Lemma~\thetheoreme\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+  \begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+
+\newenvironment{myprop}[1][]
+{
+  \refstepcounter{theoreme}
+  \begin{mdframed}[style=theoremStyle]
+  \textbf{Proposition~\thetheoreme\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+\begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+
+\newenvironment{mycoro}[1][]
+{
+  \refstepcounter{theoreme}
+  \begin{mdframed}[style=theoremStyle]
+  \textbf{Corollary~\thetheoreme\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+\begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+
+%%%
+\newenvironment{mydef}[1][]
+{
+  \refstepcounter{definition}
+  \begin{mdframed}[style=definitionStyle]
+  \textbf{Definition~\thedefinition\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+  \begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+%%%
+
+\newenvironment{myex}[1][]
+{
+  \refstepcounter{exemple}
+  \begin{mdframed}[style=exampleStyle]
+  \textbf{Example~\theexemple\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+  \begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+\newenvironment{myrem}[1][]
+{
+  \refstepcounter{exemple}
+  \begin{mdframed}[style=exampleStyle]
+  \textbf{Remark~\theexemple\ifstrempty{#1}{}{~(#1)}.}
+  \par\medskip
+\begingroup
+  \leftskip=10pt % ← ajuste ici la taille de l'indentation globale
+}
+{
+  \par\endgroup
+  \end{mdframed}
+}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%ù
+
+
+\pagenumbering{arabic}
+
+%%%
+
+
+\renewcommand\thesection{\Roman{section}}
+
+% Sous-section de la forme I.A
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+% Paragraphe de la forme a.
+\renewcommand\theparagraph{\alph{paragraph}.}
+
+
+\newcommand{\holo}{\mathscr{O}}
+\newcommand{\sheaf}{\mathcal{F}}
+\newcommand{\erond}{\mathcal{E}}
+\newcommand{\tensor}[1]{\otimes_{#1}}
+\newcommand{\locfree}{\text{LocFree}}
+\newcommand{\locfreenabla}{\text{LocFree}^\nabla}
+\newcommand{\locsys}{\text{LocSys}}
+\newcommand{\Ker}{\text{Ker}}
+\newcommand{\arond}{\mathcal{A}}
+\newcommand{\vectbun}{\text{VectBun}}
+\newcommand{\cat}[1]{\mathscr{#1}}
+\newcommand{\Tau}{\mathcal{T}}
+\newcommand{\res}{\text{res}}
+\newcommand{\sky}{\text{sky}}
+\newcommand*\quot[2]{{^{\textstyle #1}\big/_{\textstyle #2}}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\mero}{\mathcal{K}}
+
+
+
+\begin{document}
+
+
+\thispagestyle{empty}
+
+\begin{center}	
+%Logo de l'UFR de Maths-Info
+%\includegraphics[height=1.65cm, width = 2cm]{logo-ufr-maths-info}
+	
+\qquad 
+
+\begin{center}
+\includegraphics[width = 10cm]{LOGO-UFR-MAI}
+\end{center}
+
+
+\vspace{1cm}
+	
+{\Large
+Internship report
+}
+
+\vspace{2cm}
+
+%Titre du mémoire
+{\LARGE
+{\bf The Riemann-Hilbert correspondence}
+}
+
+%Le cas échéant, vous pouvez inclure sur la page de garde une image significative tirée du mémoire
+
+\vspace{10cm}
+
+%votre prénom et nom
+{\Large 
+by 
+
+Damien \textsc{Junger}
+}
+
+\vspace{1cm}
+%nom de l'encadrant ou encadrante
+{\Large 
+supervised by
+
+Annette \textsc{Huber-Klawitter}
+}
+
+\vfill
+%Année
+{\Large 
+2026	
+}
+
+
+\end{center}	
+
+\pagebreak
+
+\thispagestyle{empty}
+
+\qquad 
+
+
+\setcounter{page}{0}
+
+\vfill\pagebreak 
+
+
+\vspace*{0.03\textheight}
+
+\hspace{1 cm} Je souhaite remercier
+
+\vspace*{0.5\textheight}
+
+\begin{flushright}
+\textit{« Là-haut, la terre est bleue comme une orange »} \\
+Livre ancien, \textit{Mur de la tour d'Ær}
+\end{flushright}
+
+\pagebreak
+
+
+%%%%%%%%%%%ù
+
+
+\tableofcontents
+\newpage
+
+
+
+\input{chapters/prerequisites}
+\input{chapters/rh_correspondence}
+
+
+
+\nocite{*}
+\printbibliography
+
+
+\end{document}

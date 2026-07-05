@@ -1,0 +1,159 @@
+\subsection{Sheaf theory}
+
+
+
+In the following, $X$ is a topological space and $\Tau_X$ will denote its topology category. 
+
+\begin{mydef}
+
+Let $\cat{C}$ be a category (often $\cat{C} = \mathscr{Set}, \mathscr{Ab}, \mathscr{Rings}$...).\\
+A \textit{presheaf} of $\cat{C}$ is a contravariant functor $\sheaf : \Tau_X \to \cat{C}$.\\
+Explicitly, it is the data of :
+\begin{itemize}
+\item[1.] for every open set $U$ of $X$, an object $\sheaf(U)$ of $\cat{C}$,
+\item[2.] for every couple of open sets $V \subseteq U$ of $X$, a morphism $\res_{U,V} : \sheaf(V) \to \sheaf(U)$ verifying :
+\begin{itemize}
+\item[a.] for every open set $U$ of $X$, then $\res_{U,U} = \text{id}_U$,
+\item[b.] for every open sets $U\subseteq V \subseteq W$ of $X$, then $\res_{U,V} \circ \res_{V,W} = \res_{U,W}$.
+\end{itemize}
+\end{itemize}
+The objects $\sheaf(U)$ are often called \textit{sections of $\sheaf$ over $U$}.
+\end{mydef}
+
+\begin{myrem}
+If the context is clear, we will denote $\text{res}_{U,V}(f) = f|_U$ (the notation is justified in the next lines).
+\end{myrem}
+
+\begin{myex}
+\begin{itemize}
+\item[1)] The sheaf of real valued continuous functions $C^0(\--,\RR)$ with classical restriction functions $\res(U,V)(f) = f|_U$.
+\item[2)] If $X$ has an additional structure, the above example can be further specified : if $X$ is a differentiable manifold, we can consider $C^\infty(\--,\RR)$, if $X$ is a complex manifold, $\holo(\--,\CC)$ ...
+\item[3)] If $C$ is an object of $\cat{C}$, the constant presheaf $\underline{C}$. We will be intersted in $\underline{\ZZ}$ or $\underline{\CC}$.
+\item[4)] The sheaf of real valued bounded functions $B(\--,\RR)$.
+\end{itemize}
+\end{myex}
+
+Presheaves comes from a category point of view, so we need morphisms :
+
+\begin{mydef}
+A \textit{morphism of presheaves} (over the same space $X$) $\varphi : \sheaf \to \mathcal{G}$ is a natural transformation.\\
+More explicitly, it is the data, for each $U\in \Tau_X$, of a morphism $\varphi_U : \sheaf(U) \to \mathcal{G}(U)$ of $\cat{C}$ such that the following diagram commutes for every $U \subseteq V$ :
+\begin{center}
+\begin{tikzcd}
+\sheaf(V) \arrow[r, "\varphi_V"] \arrow[d, "\res^{\sheaf}_{U,V}" left]
+& \mathcal{G}(V) \ \arrow[d, "\res^{\mathcal{G}}_{U,V}"] \\
+\sheaf(U) \arrow[r, "\varphi_U"]
+& \mathcal{G}(U)
+\end{tikzcd}
+\end{center}
+\end{mydef}
+
+
+\begin{mydef}
+A \textit{sheaf} $\sheaf$ is a presheaf satisfying the extra conditions for any open cover $\{U_i,i\in I\}$ of an open set $U$ of $X$:
+\begin{itemize}
+\item[3.] for every $f,g \in \sheaf(U)$ such that : $\forall i \in I,~ f|_{U_i} = g|_{U_i}$, then $f = g$.
+\item[4.] for every $(f_i)\in \prod_{i\in I} \sheaf(U_i)$ such that : $\forall (i,j)\in I^2,~ f_i|_{U_i \cap U_j}= f_j|_{U_i \cap U_j}$, then there exists $f\in\sheaf(U)$ with $f|_{U_i} = f_i$ for any $i\in I$.
+\end{itemize}
+\end{mydef}
+
+
+\begin{myrem}
+For $U = \emptyset$, it says that $\sheaf(\emptyset)$ is the terminal object of $\cat{C}$ (if such one exists). Indeed, we can take the open covering of $\emptyset$ by a family indexed by $\emptyset$ itself, and we then have an arrow $\sheaf(\emptyset) \to $
+\end{myrem}
+
+\begin{myex}
+\begin{itemize}
+\item 1) and 2) are indeed sheaves.
+\item 3) is not, because of the previous remark.
+\item 4) is not either, with the conter example $\RR = \bigcup_{n\in \NN} ~(-n,n)$ and $f : x\mapsto x$.
+\item If $X$ is Hausdorff, $x_*$ is a point of $X$, $(S,s)$ a pointed set, the \textit{skycraper sheaf} is given by $\sky_{x_*}(S) : U \mapsto \left\lbrace
+\begin{array}{l l}
+S & \text{if } x_* \in U \\
+s & \text{otherwise}.
+\end{array}
+\right.
+$
+\end{itemize}
+\end{myex}
+
+\begin{mydef}
+We will denote by $\text{PSh}_X$, respectively $\text{Sh}_X$, the category of presheaves, respectively the full subcategory of sheaves, over $X$.
+\end{mydef}
+
+One can ask what looks like the behavior of the sheaf very locally, on a point. Since a singleton is in general not a point, we need the following definition.
+
+\begin{mydef}
+Let $\sheaf$ be a (pre)sheaf.\\
+We define the \textit{stalk} at $x\in X$ as :
+\begin{center}
+$\sheaf_x := \quot{\{(U,s) | ~x\in U, ~U \in \Tau_X, ~s \in \sheaf(U)\}}{\sim}~,$
+\end{center}
+where $(U,s) \sim (V,t) \Leftrightarrow (\exists W \subset U \cap V): s|_W = t|_W$.
+\end{mydef}
+
+\begin{myrem}
+From a categorical point of view, it is also the direct limit : $\sheaf_x = \underset{\overrightarrow{U \ni x}}{\lim} \sheaf(U)$, where the limit is taken over open set $U$.
+\end{myrem}
+
+It turns out that this localization principle can be used to transform a presheaf into a sheaf in a natural way (in the sense of what follows).
+
+\begin{mydef}
+Let $\sheaf$ be a presheaf.\\
+We define for every open set $U$
+\begin{center}
+$\d \sheaf^{\sharp}(U) = \left\lbrace s : U \to \coprod_{x\in U} \sheaf_x ~\left|\right.~ \left\lbrace 
+\begin{array}{l}
+\forall x\in U,~ s(x) \in \sheaf_x\\
+\exists V \subset U,\exists t\in \sheaf(V) \text{ s.th.} \forall y\in V,~ s(y) = t(y)
+\end{array}
+\right. \right\rbrace$.
+\end{center}
+$\sheaf^\sharp$ is called the \textit{sheafification of $\sheaf$}.
+\end{mydef}
+
+\begin{myprop}
+$\sheaf^\sharp$ is a sheaf.
+\end{myprop}
+
+\begin{myex}
+$\underline{\RR}^\sharp$ is the sheaf of locally constant functions, more precisely the sheaf of continuous functions $C^0(\--,\RR)$, where $\RR$ is equipped with the discrete topology.
+\end{myex}
+
+
+
+\begin{myprop}
+$((\--)^\sharp,\text{Forget})$ is an adjoint pair of functors between $\text{PSh}_X$ and $\text{Sh}_X$.
+\end{myprop}
+
+\begin{mydemo}
+blablabla
+\end{mydemo}
+
+\begin{myex}
+Suppose that $\cat{C}$ admits kernels and cokernels (this assumption holds whenever kernels and cokernels are written). \\
+For $\varphi: \sheaf \to \mathcal{G}$, we define $\Ker(\varphi)(U) := \Ker(\varphi_U)$, $\text{Im}(\varphi)(U) := \text{Im}(\varphi_U)$ and $\text{Coker}(\varphi)(U) := \text{Coker}(\varphi_U)$.\\
+The first one is always a sheaf, but the two others are not in general. In the following, $\text{Im}(\varphi)$ or $\text{Coker}(\varphi)$ will always denote the sheafification of these presheaves.
+\end{myex}
+
+\begin{myprop}
+A complex $0 \to \sheaf \to \mathcal{G} \to \mathcal{H} \to 0$ is exact if, and only if the induced complex on stalks $0 \to \sheaf_x \to \mathcal{G}_x \to \mathcal{H}_x \to 0$ is exact for every $x\in X$.
+\end{myprop}
+
+\begin{mydemo}
+blablabla
+\end{mydemo}
+
+\begin{myrem}
+In general, it is not equivalent of the exactness of the induced sequence over every open set $U$.\\
+One could take as a counterexample the exponential sequence on $\CC$ :
+\begin{center}
+$
+\begin{array}{c c c c c c c c c}
+0 & \to & \underline{\ZZ} & \to & \holo_\CC & \to & \holo_\CC^* & \to & 0,\\
+  &     &                &     &   f       & \mapsto & \exp(2\pi i f) & &\\
+\end{array}
+$
+\end{center}
+that is not exact over $\CC^*$, because the map $\holo_{\CC^*} \to \holo_{\CC^*}^*$ is not surjective : the map $z \mapsto z$ does not belong to the image since $\log$ is not well defined over $\CC^*$.
+\end{myrem}

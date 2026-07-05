@@ -1,0 +1,95 @@
+\subsection{Holomorphic version on a complex manifold}
+
+
+
+\begin{mytheo}[Riemann-Hilbert correspondence, complex manifold case]
+The fonctor
+\begin{center}
+$\fonction{F}{\locfreenabla(X)}{\locsys(X)}{(\erond,\nabla)}{\erond^{\nabla} := \Ker(\nabla)}$
+\end{center}
+induces an equivalence of categories.\\
+It's inverse is given by
+\begin{center}
+$\fonction{G}{\locsys(X)}{\locfreenabla(X)}{\arond}{(\holo_X \tensor{\CC} \arond,d\otimes 1)}$
+\end{center}
+\end{mytheo}
+
+\begin{mydemo}
+\begin{itemize}
+
+\item[] \underline{Step 1} :  $G$ is well defined, that is : if $\arond \in \locsys(X)$, then $(\erond,\nabla) := (\arond \tensor{\CC} \holo_X,1\otimes d) \in \locfree^\nabla(X)$.
+
+\smallskip
+First remark that $d\otimes 1$ is well defined by extension of $\holo_X \to \Omega^1_X$ with the tensor product. We also use the identification 
+\begin{center}
+$(\arond \tensor{\CC} \holo_X)\tensor{\holo_X} \Omega^1_X \simeq \arond \tensor{\CC} (\holo_X \tensor{\holo_X} \Omega^1_X) \simeq \arond \tensor{\CC} \Omega^1_X$
+\end{center} by super-commutativity of the tensor product.\\
+For a small open set such that $\arond|_U \simeq \CC^r$, we have $(\arond \otimes \holo_X)|_U \simeq \arond|_U \otimes \holo_U \simeq \CC^r \otimes \holo_U \simeq \holo_U^{\oplus r}$.\\
+Finally, we have :
+\begin{center}
+$\nabla^{(1)} \circ \nabla (a\otimes f) = \nabla^{(1)} ((a \otimes 1) \otimes df) = \nabla(a \otimes 1) \wedge df + a \otimes d(df) = (a \otimes d1) \wedge df = 0$.
+\end{center}
+We again used that the image of $a \otimes f$ in $\erond \tensor{\holo_X} \Omega^1_X$ is identified with $(a \otimes 1) \otimes df$.
+
+
+\item[] \underline{Step 2} : $G$ is a functor.
+
+\smallskip
+If $\phi : A \to B$ is a morphism in $\locsys(X)$, we have an induced $G(\phi) = \phi \otimes 1 : A \tensor{\CC} \holo_X \to B \tensor{\CC} \holo_X$ that makes the following commutes :
+\begin{center}
+\begin{tikzcd}
+A \tensor{\CC} \holo_X \arrow[r, "\phi \tensor 1"] \arrow[d, "1 \otimes d" left]
+& A \tensor{\CC} \holo_X \ \arrow[d, "1 \otimes d"] \\
+A \tensor{\CC} \Omega^1_X \arrow[r, "\phi \otimes 1"]
+& B \tensor{\CC} \Omega^1_X
+\end{tikzcd}
+\end{center}
+
+
+\item[] \underline{Step 3} : $F$ is well defined, that is : if $(\erond,\nabla) \in \locfree(X)$, then $\erond^\nabla \in \locsys(X)$.
+
+\smallskip
+This is the most difficult part. Let's sketch out the proof.\\
+The result is equivalent to saying that \textit{locally}, the solutions of our system of differential equations given by $\nabla$ is a complex vector space, with dimension equal to the rank of the system. One can then think of the Cauchy-Lipschitz theorem.
+
+
+\item[] \underline{Step 4} : $F$ is a functor.
+
+\smallskip
+If $\phi : (\erond_1,\nabla_1) \to (\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$, then it induces a morphism of sheaves $\phi : \Ker(\nabla_1) \to \erond_2$, and its image is a subset of $\Ker(\nabla_2)$ by the relation $\nabla_2 \circ \phi = (f\otimes 1)\circ \nabla_1$.
+
+
+\item[] \underline{Step 5} : $GF \simeq 1_{\locfree^\nabla(X)}$.
+
+\smallskip
+Let $(\erond,\nabla) \in \locfree^\nabla(X)$. Set
+\begin{center}
+$\fonction{\alpha_{(\erond,\nabla)}}{\Ker(\nabla) \tensor{\CC} \holo_X}{\erond}{s \otimes f}{fs}$.
+\end{center}
+It is clearly well defined and for $s \otimes f \in \Ker(\nabla) \tensor{\CC} \holo_X$, we have :
+\begin{center}
+$\nabla(\alpha(s \otimes f))=\nabla(fs) = s \otimes df = \alpha(s \otimes 1)\otimes df = (\alpha\otimes 1)((1 \otimes d)(s \otimes f))$,
+\end{center}
+so $\varphi$ define a morphism in the category $\locfree^\nabla(X)$.\\
+Better, it defines a natural transformation. Let $\phi :(\erond_1,\nabla_1)\to(\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$. Then,
+\begin{center}
+$\phi(\alpha_{(\erond_1,\nabla_1)}(f\otimes s)) = \phi(fs)$
+\end{center}
+and
+\begin{center}
+$\alpha_{(\erond_2,\nabla_2)}(GF(\phi)) = \alpha_{(\erond_2,\nabla_2)}(F(\phi)(s)\otimes f) = f\phi(s)$.
+\end{center}
+This is equal because $\phi$ is a morphism of $\holo_X$-modules.\\
+We define an inverse $\beta_{(\erond,\nabla)}$ locally. For an open set $U$ such that $\erond_U \simeq \holo_U^{\oplus r}$, we set $(s_1, \dots, s_r)$ a basis of $\erond(U)$. Then a section $\sigma \in \erond(U)$ is uniquely written as $\sigma = \sum_{i=1}^r f_i s_i$, and we define $\beta_{(\erond,\nabla)}(\sigma) = \sum_{i = 1}^r f_i \otimes s_i$. It clearly does not depend on the basis, since two basis differ from one another by a matrix with constant coefficients, and therefore	 commutes with the tensor product.\\
+Still localy, we have $\alpha_{(\erond,\nabla)} \circ \beta_{(\erond,\nabla)} = $
+
+
+\item[] \underline{Step 6} : $FG \simeq 1_{\locsys(X)}$.
+
+\smallskip
+We clearly have for a local system $\arond$ on $X$, $(\arond \tensor{\CC} \holo_X)^{1 \otimes d} \simeq \arond \tensor{\CC} \CC \simeq \arond$, and it behaves well with morphisms, such that it defines an isomorphism of functors.
+
+
+
+\end{itemize}
+\end{mydemo}
