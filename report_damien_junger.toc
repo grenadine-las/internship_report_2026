@@ -1,9 +1,14 @@
-\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {I}Prerequisites}{3}{section.1}%
 \contentsline {subsection}{\numberline {I.1}Category theory}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {I.2}Sheaf theory}{4}{subsection.1.2}%
 \contentsline {subsection}{\numberline {I.3}Complex geometry}{7}{subsection.1.3}%
-\contentsline {section}{\numberline {II}The Riemann-Hilbert correspondence}{10}{section.2}%
-\contentsline {subsection}{\numberline {II.1}A correspondence in algebraic topology}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {II.2}Holomorphic version on a complex manifold}{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {II.3}Meromorphic version on a complex manifold}{11}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {I.3.1}First definitions}{7}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {I.3.2}Vector bundle}{8}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {I.3.3}Connections}{9}{subsubsection.1.3.3}%
+\contentsline {section}{\numberline {II}The Riemann-Hilbert correspondence}{12}{section.2}%
+\contentsline {subsection}{\numberline {II.1}A correspondence in algebraic topology}{12}{subsection.2.1}%
+\contentsline {subsection}{\numberline {II.2}Holomorphic version on a complex manifold}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {II.3}Meromorphic version on a complex manifold}{14}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {II.3.1}In dimension 1}{14}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {II.3.2}Sketch of a proof in higher dimension}{14}{subsubsection.2.3.2}%

@@ -50,13 +50,19 @@ A \tensor{\CC} \Omega^1_X \arrow[r, "\phi \otimes 1"]
 
 \smallskip
 This is the most difficult part. Let's sketch out the proof.\\
-The result is equivalent to saying that \textit{locally}, the solutions of our system of differential equations given by $\nabla$ is a complex vector space, with dimension equal to the rank of the system. One can then think of the Cauchy-Lipschitz theorem.
+The result is equivalent to saying that \textit{locally}, the solutions of our system of differential equations given by $\nabla$ is a complex vector space, with dimension equal to the rank of the system. One can then think of the Cauchy-Lipschitz (or Picard–Lindelöf) theorem. It indeed works when $X$ is a curve because we have locally an ordinary differential equation. If $n>1$, this theorem cannot be apply.\\
+There is an alternative for this type of system : the Frobenius theorem.
+
+\begin{mylemme}
+Let $x \in X$.\\
+There exists an open set $U$ containing $x$ such that the evaluation $\text{ev}_x : \Ker(\nabla|_U) \to \pi^{-1}(x)$ is an isomorphism (of sheaves).
+\end{mylemme}
 
 
 \item[] \underline{Step 4} : $F$ is a functor.
 
 \smallskip
-If $\phi : (\erond_1,\nabla_1) \to (\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$, then it induces a morphism of sheaves $\phi : \Ker(\nabla_1) \to \erond_2$, and its image is a subset of $\Ker(\nabla_2)$ by the relation $\nabla_2 \circ \phi = (f\otimes 1)\circ \nabla_1$.
+If $\phi : (\erond_1,\nabla_1) \to (\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$, then it induces a morphism of sheaves $\phi : \Ker(\nabla_1) \to \erond_2$, and its image is a subset of $\Ker(\nabla_2)$ by the relation $\nabla_2 \circ \phi = (\phi\otimes 1)\circ \nabla_1$.
 
 
 \item[] \underline{Step 5} : $GF \simeq 1_{\locfree^\nabla(X)}$.
@@ -66,11 +72,11 @@ Let $(\erond,\nabla) \in \locfree^\nabla(X)$. Set
 \begin{center}
 $\fonction{\alpha_{(\erond,\nabla)}}{\Ker(\nabla) \tensor{\CC} \holo_X}{\erond}{s \otimes f}{fs}$.
 \end{center}
-It is clearly well defined and for $s \otimes f \in \Ker(\nabla) \tensor{\CC} \holo_X$, we have :
+It is clearly well defined and for $s \otimes f \in \Ker(\nabla) \tensor{\CC} \holo_X$, we have, using the Liebniz rule :
 \begin{center}
-$\nabla(\alpha(s \otimes f))=\nabla(fs) = s \otimes df = \alpha(s \otimes 1)\otimes df = (\alpha\otimes 1)((1 \otimes d)(s \otimes f))$,
+$\nabla(\alpha_{(\erond,\nabla)}(s \otimes f))=\nabla(fs) = s \otimes df = \alpha(s \otimes 1)\otimes df = (\alpha\otimes 1)((1 \otimes d)(s \otimes f))$,
 \end{center}
-so $\varphi$ define a morphism in the category $\locfree^\nabla(X)$.\\
+so $\alpha_{(\erond,\nabla)}$ define a morphism in the category $\locfree^\nabla(X)$.\\
 Better, it defines a natural transformation. Let $\phi :(\erond_1,\nabla_1)\to(\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$. Then,
 \begin{center}
 $\phi(\alpha_{(\erond_1,\nabla_1)}(f\otimes s)) = \phi(fs)$
@@ -79,10 +85,13 @@ and
 \begin{center}
 $\alpha_{(\erond_2,\nabla_2)}(GF(\phi)) = \alpha_{(\erond_2,\nabla_2)}(F(\phi)(s)\otimes f) = f\phi(s)$.
 \end{center}
-This is equal because $\phi$ is a morphism of $\holo_X$-modules.\\
-We define an inverse $\beta_{(\erond,\nabla)}$ locally. For an open set $U$ such that $\erond_U \simeq \holo_U^{\oplus r}$, we set $(s_1, \dots, s_r)$ a basis of $\erond(U)$. Then a section $\sigma \in \erond(U)$ is uniquely written as $\sigma = \sum_{i=1}^r f_i s_i$, and we define $\beta_{(\erond,\nabla)}(\sigma) = \sum_{i = 1}^r f_i \otimes s_i$. It clearly does not depend on the basis, since two basis differ from one another by a matrix with constant coefficients, and therefore	 commutes with the tensor product.\\
-Still localy, we have $\alpha_{(\erond,\nabla)} \circ \beta_{(\erond,\nabla)} = $
+This is equal because $\phi$ is a morphism of $\holo_X$-modules.
+\smallskip
 
+To show that this is an isomorphism, let $U$ be a small open neighborhood of $x$, such that $\Ker(\nabla|_U) \simeq \CC^r$. Let $(s_1,\dots,s_r)$ a basis of $\Ker(\nabla|_U)$. Then, $(s_1 \otimes 1,\dots, s_r \otimes 1)$ is a basis of $\Ker(\nabla|_U) \tensor{C} \holo_U$.\\
+Moreover by taking $U$ small enough, $(s_1,\dots,s_r)$ is also a $\holo_U$-basis of $\erond(U) \simeq \holo_U^{\oplus r}$. Indeed, the determinant of the matrix (in any basis of $\erond_U$) with $j$-th column $(s_j^{(i)})^T$ is not zero at $x$, so does not vanish in a small neighborhood of $x$.\\
+Therefore, the matrix of $\alpha_{(\erond,\nabla)}$ in the basis $(s_1,\dots,s_r)$ (on both sides) is the identity, and is invertible.\\
+Thus, $\alpha_{(\erond,\nabla)}$ is invertible on each stalk, and it is an isomorphism of sheaves.
 
 \item[] \underline{Step 6} : $FG \simeq 1_{\locsys(X)}$.
 

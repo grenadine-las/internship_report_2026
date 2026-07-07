@@ -1,5 +1,7 @@
 \subsection{Complex geometry}
 
+\subsubsection{First definitions}
+
 \begin{mydef}
 Let $X$ be a differentiable manifold of dimension $2n$.\\
 An \textit{holomorphic atlas} is a set $\{(U_i,\varphi_i),i\in I\}$ where $X = \bigcup_{i\in I} U_i$ is an open cover and $\varphi : U_i \to \CC^n$ are homeomorphism on their image, such that for all $(i,j)\in I^2$, the \textit{transition map} $\varphi_j \circ \varphi_i^{-1} : \varphi_i(U_i \cap U_j) \to \varphi_j(U_i \cap U_j)$ is holomorphic. 
@@ -52,6 +54,8 @@ The sheaf of meromorphic functions is denoted $\mero_X$.
 If $U\subset X$ is an connected open subset, then $\mero_X(U)$ is a field, and if $X$ itself is connected, $\mero(X) = \mero_X(X)$ is called the function field of $X$.
 \end{myrem}
 
+
+\subsubsection{Vector bundle}
 
 \begin{mydef}
 Let $X$ be a complex manifold and $r$ a positive integer.\\
@@ -106,9 +110,12 @@ $\varphi$ clearly defines a morphism of sheaves.\\
 In order to construct a quasi-inverse, let $\sheaf \in \mathcal{S}_X$ and $\psi : \sheaf(U_i) \to \holo_{U_i}{\vphantom{\holo}}^{\oplus r}$ local trivialisations on an open cover $\{U_i,i \in I\}$ of $X$.
 \end{mydemo}
 
+
+\subsubsection{Connections}
+
 \begin{mydef}
 Let $\erond$ be a locally free $\holo_X$-modules.\\
-A \textit{connection} is a $\CC$-linear application $\nabla : \erond \to \erond \otimes_{\holo_X} \Omega_X^1$ satisfying the \textit{Liebniz relation} : for any local sections $s$ and local function $f$, then
+A \textit{connection on $\erond$} is a $\CC$-linear application $\nabla : \erond \to \erond \otimes_{\holo_X} \Omega_X^1$ satisfying the \textit{Liebniz relation} : for any local sections $s$ and local function $f$, then
 \begin{center}
 $\nabla(fs) = df \otimes s + f\nabla(s)$.
 \end{center}
@@ -121,6 +128,54 @@ A connection $\nabla$ is said to be \textit{flat} (or \textit{integrable}) if th
 
 \begin{myrem}
 In dimension 1, we have $\Omega_X^2 = 0$, so all connections are flat.
+\end{myrem}
+
+\begin{myex}
+\begin{itemize}
+\item[1)] $d$ is a connection on $\holo_X$ by identifying $\holo_X \tensor{\holo_X} \Omega_X^1 \simeq \Omega_X^1$. It induces a connection on $\holo_X^r$ acting coordinate-wise.
+\item[2)] For every $\omega \in\Omega_X^1$, the map
+\begin{center}
+$\fonction{d+\omega}{\holo_X}{\Omega_X^1}{f}{df +\omega f}$
+\end{center}
+is a connection. More generally, if $\omega$ is a $r \times r$ matrix with coefficients in $\Omega_X^1$, the map $d + \omega$ is a connection on $\holo_X^r$.
+\end{itemize}
+\end{myex}
+
+The following result says that these are the only ones on $\holo_X^r$, and then the only ones locally on $\erond$.
+
+\begin{mylemme}
+Every connection $\nabla$ on $\holo_X^r$ is written $d + \omega$ for some $\omega$ as above.
+\end{mylemme}
+
+\begin{mydemo}
+For every $f \in \holo_X$ and $h \in \holo_X^r$, we have by the Liebniz rule :
+\begin{center}
+$(\nabla - d)(fh) = f\nabla(h) + df \otimes h - fdh - df \otimes h = f(\nabla - d)h$.
+\end{center}
+Thus, $\nabla - d : \holo_X^r \to \Omega_X^1$ is $\holo_X$-linear and it's the multiplication by a matrix $\omega$.
+\end{mydemo}
+
+\begin{myrem}
+Connections are a reformulation of (systems) of differential equations, locally on a vector bundle.\\
+Let $\nabla = d + \omega$ a connection on $\holo_X^r$ (it is of this form by the previous lemma). We choose local coordinates $z^1,\dots,z^n$ on $X$. Then we can write 
+\begin{center}
+$\d \omega(z) = \sum_{j=1}^n A_i(z) dz^j$.
+\end{center}
+For a $f$ holomorphic on the chart, we then have :
+\begin{center}
+$\d \nabla f = \sum_{j=1}^n \left(\frac{\partial f}{\partial x^j} + A_j f\right)dz^j$,
+\end{center}
+and $\nabla f = 0$ is equivalent to :
+\begin{center}
+$\left\lbrace
+\begin{array}{c}
+\d \frac{\partial f}{\partial z^1}(z) = A_1(z) f(z),\\
+\d \vdots \\
+\d\frac{\partial f}{\partial z^n}(z) = A_n(z) f(z),
+\end{array}
+\right.$
+\end{center}
+which is a system of \textit{partial} differential equations.\\
 \end{myrem}
 
 \begin{mydef}
