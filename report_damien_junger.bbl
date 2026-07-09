@@ -19,6 +19,182 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{assem_categorie}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f41b388f37389300ba0b3c5218a92f7f}{%
+           family={Assem},
+           familyi={A\bibinitperiod},
+           given={Ibrahim},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Calvage et Mounet}%
+      }
+      \strng{namehash}{f41b388f37389300ba0b3c5218a92f7f}
+      \strng{fullhash}{f41b388f37389300ba0b3c5218a92f7f}
+      \strng{bibnamehash}{f41b388f37389300ba0b3c5218a92f7f}
+      \strng{authorbibnamehash}{f41b388f37389300ba0b3c5218a92f7f}
+      \strng{authornamehash}{f41b388f37389300ba0b3c5218a92f7f}
+      \strng{authorfullhash}{f41b388f37389300ba0b3c5218a92f7f}
+      \field{labelalpha}{Ass22}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction au langage catégorique}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{benoit_homological}{online}{}
+      \name{author}{1}{}{%
+        {{hash=30253ae91b71c7be263a91f170136672}{%
+           family={Benoit},
+           familyi={B\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{30253ae91b71c7be263a91f170136672}
+      \strng{fullhash}{30253ae91b71c7be263a91f170136672}
+      \strng{bibnamehash}{30253ae91b71c7be263a91f170136672}
+      \strng{authorbibnamehash}{30253ae91b71c7be263a91f170136672}
+      \strng{authornamehash}{30253ae91b71c7be263a91f170136672}
+      \strng{authorfullhash}{30253ae91b71c7be263a91f170136672}
+      \field{labelalpha}{Ben22}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Homological Algebra}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://www.math.u-bordeaux.fr/~dbenoua/Documents/Cours-Homological-algebra.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.math.u-bordeaux.fr/~dbenoua/Documents/Cours-Homological-algebra.pdf
+      \endverb
+    \endentry
+    \entry{borel_dmodules}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=0ee895917eb0a33121189b88eecae67e}{%
+           family={Borel},
+           familyi={B\bibinitperiod},
+           given={Armand},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \strng{fullhash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \strng{bibnamehash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \strng{authorbibnamehash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \strng{authornamehash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \strng{authorfullhash}{7f09588bec1c6858d3e4811c33eaaf18}
+      \field{labelalpha}{Bor+87}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algebraic D-modules}
+      \field{year}{1987}
+    \endentry
+    \entry{deligne_equa_diff}{book}{}
+      \name{author}{1}{}{%
+        {{hash=876d32ddd7383ddfb7c5ca89662b261d}{%
+           family={Deligne},
+           familyi={D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \strng{fullhash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \strng{bibnamehash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \strng{authorbibnamehash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \strng{authornamehash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \strng{authorfullhash}{876d32ddd7383ddfb7c5ca89662b261d}
+      \field{labelalpha}{Del70}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Equations Différentielles à Points Singuliers Réguliers}
+      \field{year}{1970}
+      \true{nocite}
+    \endentry
+    \entry{HTT_dmodules}{book}{}
+      \name{author}{3}{}{%
+        {{hash=34da163046465e6a62ceb34ba3384f42}{%
+           family={Hotta},
+           familyi={H\bibinitperiod},
+           given={Ryoshi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b2bd533f24e610c64c2be7f7b8cd6cad}{%
+           family={Takeuchi},
+           familyi={T\bibinitperiod},
+           given={Kiyaoshi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=486d52cfce814e735994df407bc54c96}{%
+           family={Tanisaki},
+           familyi={T\bibinitperiod},
+           given={Toshiyuki},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Birkhäuser}%
+      }
+      \strng{namehash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \strng{fullhash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \strng{bibnamehash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \strng{authorbibnamehash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \strng{authornamehash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \strng{authorfullhash}{0b8d1c14c8f2ab77c2cdaa2214836c42}
+      \field{labelalpha}{HTT08}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{\textit{D}-Modules, Perverse Sheaves, and Reprensentation Theory}
+      \field{year}{2008}
+      \true{nocite}
+    \endentry
+    \entry{hulse_gauss_manin}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a194bba2ad2851c49b499bee97605d47}{%
+           family={Hulse},
+           familyi={H\bibinitperiod},
+           given={Mohit},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MIT}%
+      }
+      \strng{namehash}{a194bba2ad2851c49b499bee97605d47}
+      \strng{fullhash}{a194bba2ad2851c49b499bee97605d47}
+      \strng{bibnamehash}{a194bba2ad2851c49b499bee97605d47}
+      \strng{authorbibnamehash}{a194bba2ad2851c49b499bee97605d47}
+      \strng{authornamehash}{a194bba2ad2851c49b499bee97605d47}
+      \strng{authorfullhash}{a194bba2ad2851c49b499bee97605d47}
+      \field{labelalpha}{Hul25}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Period maps and the Gauss–Manin connection}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://math.mit.edu/nt/Hulse2025-02-20.pdf
+      \endverb
+      \verb{url}
+      \verb https://math.mit.edu/nt/Hulse2025-02-20.pdf
+      \endverb
+    \endentry
     \entry{huybrechts_complex_geo}{book}{}
       \name{author}{1}{}{%
         {{hash=62ef5d71962e55d1e2757e1aeb5755c8}{%
@@ -43,6 +219,128 @@
       \field{labeltitlesource}{title}
       \field{title}{Complex geometry, an introduction}
       \field{year}{2004}
+    \endentry
+    \entry{katz}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=4ce91d281267b29c0124a28cf2ce8072}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9d8f63a335335289bf4f4a330eafc64d}{%
+           family={Princeton},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{fullhash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{bibnamehash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{authorbibnamehash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{authornamehash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{authorfullhash}{4ce91d281267b29c0124a28cf2ce8072}
+      \strng{editorbibnamehash}{9d8f63a335335289bf4f4a330eafc64d}
+      \strng{editornamehash}{9d8f63a335335289bf4f4a330eafc64d}
+      \strng{editorfullhash}{9d8f63a335335289bf4f4a330eafc64d}
+      \field{labelalpha}{Kat76}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of Symposia in Pure Mathematics}
+      \field{title}{An overview of Deligns's work on Hilbert's twenty-first problem}
+      \field{year}{1976}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://web.math.princeton.edu/~nmk/old/DeligneXXIHilbert.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.math.princeton.edu/~nmk/old/DeligneXXIHilbert.pdf
+      \endverb
+    \endentry
+    \entry{poonen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=431e6f90528021b69e26ef43cce177fa}{%
+           family={Poonen},
+           familyi={P\bibinitperiod},
+           given={Bjorn},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MIT}%
+      }
+      \strng{namehash}{431e6f90528021b69e26ef43cce177fa}
+      \strng{fullhash}{431e6f90528021b69e26ef43cce177fa}
+      \strng{bibnamehash}{431e6f90528021b69e26ef43cce177fa}
+      \strng{authorbibnamehash}{431e6f90528021b69e26ef43cce177fa}
+      \strng{authornamehash}{431e6f90528021b69e26ef43cce177fa}
+      \strng{authorfullhash}{431e6f90528021b69e26ef43cce177fa}
+      \field{labelalpha}{Poo25}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algebraic differential equations : an introduction to local systems, connections, and $p$-curvature}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://math.mit.edu/~poonen/papers/connections.pdf
+      \endverb
+      \verb{url}
+      \verb https://math.mit.edu/~poonen/papers/connections.pdf
+      \endverb
+    \endentry
+    \entry{szamuely_galois}{book}{}
+      \name{author}{1}{}{%
+        {{hash=934491605fe4a22de62016eac47e5213}{%
+           family={Szamuely},
+           familyi={S\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Studies in Advanced Mathematics}%
+      }
+      \strng{namehash}{934491605fe4a22de62016eac47e5213}
+      \strng{fullhash}{934491605fe4a22de62016eac47e5213}
+      \strng{bibnamehash}{934491605fe4a22de62016eac47e5213}
+      \strng{authorbibnamehash}{934491605fe4a22de62016eac47e5213}
+      \strng{authornamehash}{934491605fe4a22de62016eac47e5213}
+      \strng{authorfullhash}{934491605fe4a22de62016eac47e5213}
+      \field{labelalpha}{Sza12}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Galois Groups and Fundamental Groups}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{voisin_hodge}{book}{}
+      \name{author}{1}{}{%
+        {{hash=625f65d83634031135aec419045f16ea}{%
+           family={Voisin},
+           familyi={V\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Société Mathématique de France}%
+      }
+      \strng{namehash}{625f65d83634031135aec419045f16ea}
+      \strng{fullhash}{625f65d83634031135aec419045f16ea}
+      \strng{bibnamehash}{625f65d83634031135aec419045f16ea}
+      \strng{authorbibnamehash}{625f65d83634031135aec419045f16ea}
+      \strng{authornamehash}{625f65d83634031135aec419045f16ea}
+      \strng{authorfullhash}{625f65d83634031135aec419045f16ea}
+      \field{labelalpha}{Voi02}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Théorie de Hodge et géométrie algébrique complexe}
+      \field{year}{2002}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

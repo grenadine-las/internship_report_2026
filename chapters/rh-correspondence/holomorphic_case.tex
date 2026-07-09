@@ -15,9 +15,8 @@ $\fonction{G}{\locsys(X)}{\locfreenabla(X)}{\arond}{(\holo_X \tensor{\CC} \arond
 \end{mytheo}
 
 \begin{mydemo}
-\begin{itemize}
 
-\item[] \underline{Step 1} :  $G$ is well defined, that is : if $\arond \in \locsys(X)$, then $(\erond,\nabla) := (\arond \tensor{\CC} \holo_X,1\otimes d) \in \locfree^\nabla(X)$.
+\underline{Step 1} :  $G$ is well defined, that is : if $\arond \in \locsys(X)$, then $(\erond,\nabla) := (\arond \tensor{\CC} \holo_X,1\otimes d) \in \locfree^\nabla(X)$.
 
 \smallskip
 First remark that $d\otimes 1$ is well defined by extension of $\holo_X \to \Omega^1_X$ with the tensor product. We also use the identification 
@@ -32,7 +31,7 @@ $\nabla^{(1)} \circ \nabla (a\otimes f) = \nabla^{(1)} ((a \otimes 1) \otimes df
 We again used that the image of $a \otimes f$ in $\erond \tensor{\holo_X} \Omega^1_X$ is identified with $(a \otimes 1) \otimes df$.
 
 
-\item[] \underline{Step 2} : $G$ is a functor.
+\underline{Step 2} : $G$ is a functor.
 
 \smallskip
 If $\phi : A \to B$ is a morphism in $\locsys(X)$, we have an induced $G(\phi) = \phi \otimes 1 : A \tensor{\CC} \holo_X \to B \tensor{\CC} \holo_X$ that makes the following commutes :
@@ -46,26 +45,26 @@ A \tensor{\CC} \Omega^1_X \arrow[r, "\phi \otimes 1"]
 \end{center}
 
 
-\item[] \underline{Step 3} : $F$ is well defined, that is : if $(\erond,\nabla) \in \locfree(X)$, then $\erond^\nabla \in \locsys(X)$.
+\underline{Step 3} : $F$ is well defined, that is : if $(\erond,\nabla) \in \locfree(X)$, then $\erond^\nabla \in \locsys(X)$.
 
 \smallskip
 This is the most difficult part. Let's sketch out the proof.\\
-The result is equivalent to saying that \textit{locally}, the solutions of our system of differential equations given by $\nabla$ is a complex vector space, with dimension equal to the rank of the system. One can then think of the Cauchy-Lipschitz (or Picard–Lindelöf) theorem. It indeed works when $X$ is a curve because we have locally an ordinary differential equation. If $n>1$, this theorem cannot be apply.\\
-There is an alternative for this type of system : the Frobenius theorem.
+The result is equivalent to saying that \textit{locally}, the solutions of our system of differential equations given by $\nabla$ is a complex vector space, with dimension equal to the rank of the system. One can then think of the Cauchy-Lipschitz (or Picard-Lindelöf) theorem. It indeed works when $X$ is a curve because we have locally an ordinary differential equation. If $n>1$, this theorem cannot be applied.\\
+There is an alternative for this type of system : the Frobenius theorem. One corollary of this theorem is the following lemma, that implies immedialety the result.
 
 \begin{mylemme}
 Let $x \in X$.\\
-There exists an open set $U$ containing $x$ such that the evaluation $\text{ev}_x : \Ker(\nabla|_U) \to \pi^{-1}(x)$ is an isomorphism (of sheaves).
+There exists an open set $U$ containing $x$ such that the evaluation $\text{ev}_x : \Ker(\nabla|_U) \to \pi^{-1}(x)$ is an isomorphism (of sheaves of complex vector spaces).
 \end{mylemme}
 
 
-\item[] \underline{Step 4} : $F$ is a functor.
+\underline{Step 4} : $F$ is a functor.
 
 \smallskip
 If $\phi : (\erond_1,\nabla_1) \to (\erond_2,\nabla_2)$ a morphism in $\locfree^\nabla(X)$, then it induces a morphism of sheaves $\phi : \Ker(\nabla_1) \to \erond_2$, and its image is a subset of $\Ker(\nabla_2)$ by the relation $\nabla_2 \circ \phi = (\phi\otimes 1)\circ \nabla_1$.
 
 
-\item[] \underline{Step 5} : $GF \simeq 1_{\locfree^\nabla(X)}$.
+\underline{Step 5} : $GF \simeq 1_{\locfree^\nabla(X)}$.
 
 \smallskip
 Let $(\erond,\nabla) \in \locfree^\nabla(X)$. Set
@@ -88,17 +87,16 @@ $\alpha_{(\erond_2,\nabla_2)}(GF(\phi)) = \alpha_{(\erond_2,\nabla_2)}(F(\phi)(s
 This is equal because $\phi$ is a morphism of $\holo_X$-modules.
 \smallskip
 
-To show that this is an isomorphism, let $U$ be a small open neighborhood of $x$, such that $\Ker(\nabla|_U) \simeq \CC^r$. Let $(s_1,\dots,s_r)$ a basis of $\Ker(\nabla|_U)$. Then, $(s_1 \otimes 1,\dots, s_r \otimes 1)$ is a basis of $\Ker(\nabla|_U) \tensor{C} \holo_U$.\\
+To show that this is an isomorphism, let $U$ be a small open neighborhood of $x$, such that $\Ker(\nabla|_U) \simeq \CC^r$. Let $(s_1,\dots,s_r)$ a basis of $\Ker(\nabla|_U)$. Then, $(s_1 \otimes 1,\dots, s_r \otimes 1)$ is a basis of $\Ker(\nabla|_U) \tensor{\CC} \holo_U$.\\
 Moreover by taking $U$ small enough, $(s_1,\dots,s_r)$ is also a $\holo_U$-basis of $\erond(U) \simeq \holo_U^{\oplus r}$. Indeed, the determinant of the matrix (in any basis of $\erond_U$) with $j$-th column $(s_j^{(i)})^T$ is not zero at $x$, so does not vanish in a small neighborhood of $x$.\\
 Therefore, the matrix of $\alpha_{(\erond,\nabla)}$ in the basis $(s_1,\dots,s_r)$ (on both sides) is the identity, and is invertible.\\
 Thus, $\alpha_{(\erond,\nabla)}$ is invertible on each stalk, and it is an isomorphism of sheaves.
 
-\item[] \underline{Step 6} : $FG \simeq 1_{\locsys(X)}$.
+\underline{Step 6} : $FG \simeq 1_{\locsys(X)}$.
 
 \smallskip
 We clearly have for a local system $\arond$ on $X$, $(\arond \tensor{\CC} \holo_X)^{1 \otimes d} \simeq \arond \tensor{\CC} \CC \simeq \arond$, and it behaves well with morphisms, such that it defines an isomorphism of functors.
 
 
 
-\end{itemize}
 \end{mydemo}

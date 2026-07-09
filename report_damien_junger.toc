@@ -11,4 +11,7 @@
 \contentsline {subsection}{\numberline {II.2}Holomorphic version on a complex manifold}{12}{subsection.2.2}%
 \contentsline {subsection}{\numberline {II.3}Meromorphic version on a complex manifold}{14}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {II.3.1}In dimension 1}{14}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {II.3.2}Sketch of a proof in higher dimension}{14}{subsubsection.2.3.2}%
+\contentsline {paragraph}{\numberline {a.}Local study}{14}{paragraph.2.3.1.1}%
+\contentsline {paragraph}{\numberline {b.}Global study via patching}{15}{paragraph.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {II.3.2}Sketch of a proof in higher dimension}{15}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {III}Periods}{16}{section.3}%

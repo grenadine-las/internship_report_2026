@@ -1,4 +1,58 @@
 \subsection{Meromorphic version on a complex manifold}
 
+For a Riemann surface (meaning, $\dim(X) =1$), the previous result gives us that any finite dimensional reprensentation of $\pi_1(X,x_*)$ can be obtained as the monodromy reprensentation of some linear system of holomorphic differential equations.\\
+
+
+21st Hilbert problem : given of finite set of points 
+
 \subsubsection{In dimension 1}
+
+\paragraph{Local study}
+
+We focus out study around each point of $S$. Without loss of generality, the case around $z=0$ is sufficient.\\
+We will denote $\De$ the disk centered at 0 of radius $\e$ and $\De^*$ the associated punctured disk at $z=0$.\\
+\smallskip
+If we want to translate the definition of a connection on $\De$, we would say that such a connection is a locally free sheaf of modules $\erond$ over the sheaf of rings of meromorphic function defined on $\De$ with only a pole at $0$, equipped with a map $\nabla : \erond \to \erond \tensor{\holo_{\De}} \Omega^1_{\De}$ with linearity and Liebiz propreties.\\
+Even if it means reducing the radius of the disk, we can assume that $\erond$ is free. Moreover, it's more convenient to work with the field of germs of meromorphic functions around 0 denoted $K$. \\
+Having localised our study, we then won't work with sheaf in this paragraph. We basically follow Haefliger's lecture in \cite{borel_dmodules}.\\
+This shift of persective leads us to the following definition.
+
+\begin{mydef}
+A (germ of) \textit{meromorphic connexion} at 0 is a finite dimensional vector space $M$ over $K$ equipped with an operator $\CC$-linear $\nabla : M \to M$ saisfying the Liebniz rule :
+\begin{center}
+$\d \forall (h,u) \in K \times M : \nabla(hu)  = \frac{dh}{dz}u + h \nabla u$.
+\end{center}
+\end{mydef}
+
+With this definition, a morphism of connection is of linear morphism commuting with connections.
+
+\begin{myrem}
+The ring $D[z^{-1}]$ of germs of differential operators with meromorphic coefficients acts on a meromorphic connection $(M,\nabla)$ by $Pu = \sum_{j=1}^N a_j \nabla^j u$ if $P = \sum_{j=1}^N a_j \frac{d^j}{dz^j}$ and $u\in M$.
+\end{myrem}
+
+\begin{myrem}
+As explained in \ref{connections_diff_eq}, given a basis of $M$, a connection map on $M$ is equivalent to a system of differential equations : a meromorphic connection is given by $\nabla = d - A dz$, where $A$ is a matrix with coefficient in $K$, and vice versa.\\
+A morphism between systems of equation given by matrices $A$ and $B$ respectively is then a matrix $M : \De \to M_n(K)$ such that $\frac{dM}{dz} = BM - MA$, and we say that two systems of differential equations are \textit{equivalent} if $M(z)$ is invertible for any $z \in \De$ (or equivalently, the associate connections are isomorphic). \\
+\end{myrem}
+
+One cannot expect to have a correspondence between the category of meromorphic connections and the one of representations of $\pi_1(\De^*)$, as the following example shows :
+
+\begin{myex}
+Define the two connections $\nabla_1 = d - dz$ and $\nabla_2 = d - \frac{dz}{z^2}$. They are not equivalent since 
+\end{myex}
+
+\paragraph{Global study via patching}
+
+\begin{mytheo}
+i
+
+\end{mytheo}
+
+
+
+
+
+
+
+
 \subsubsection{Sketch of a proof in higher dimension}
