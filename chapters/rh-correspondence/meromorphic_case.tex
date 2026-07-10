@@ -7,14 +7,15 @@ For a Riemann surface (meaning, $\dim(X) =1$), the previous result gives us that
 
 \subsubsection{In dimension 1}
 
-\paragraph{Local study}
+\paragraph{Elements of Fuchs theory}
 
 We focus out study around each point of $S$. Without loss of generality, the case around $z=0$ is sufficient.\\
-We will denote $\De$ the disk centered at 0 of radius $\e$ and $\De^*$ the associated punctured disk at $z=0$.\\
-\smallskip
-If we want to translate the definition of a connection on $\De$, we would say that such a connection is a locally free sheaf of modules $\erond$ over the sheaf of rings of meromorphic function defined on $\De$ with only a pole at $0$, equipped with a map $\nabla : \erond \to \erond \tensor{\holo_{\De}} \Omega^1_{\De}$ with linearity and Liebiz propreties.\\
+We will denote $\De$ the disk centered at 0 of radius $\e$ and $\De^*$ the associated punctured disk at $z=0$.
+
+\medskip
+If we want to translate the definition of a connection on $\De$, we would say that such a connection is a locally free sheaf of modules $\erond$ over the sheaf of rings of meromorphic function defined on $\De$ with only a pole at $0$, equipped with a map $\nabla : \erond \to \erond \tensor{\holo_{\De}} \Omega^1_{\De}$ with linearity and Liebniz propreties.\\
 Even if it means reducing the radius of the disk, we can assume that $\erond$ is free. Moreover, it's more convenient to work with the field of germs of meromorphic functions around 0 denoted $K$. \\
-Having localised our study, we then won't work with sheaf in this paragraph. We basically follow Haefliger's lecture in \cite{borel_dmodules}.\\
+Having localised our study, we then won't work with sheaf in this paragraph. We basically follow Haefliger's lecture in \cite{borel_dmodules}, and the theory exposed is usually refered to as the \textit{Fuchs theory}.\\
 This shift of persective leads us to the following definition.
 
 \begin{mydef}
@@ -32,14 +33,107 @@ The ring $D[z^{-1}]$ of germs of differential operators with meromorphic coeffic
 
 \begin{myrem}
 As explained in \ref{connections_diff_eq}, given a basis of $M$, a connection map on $M$ is equivalent to a system of differential equations : a meromorphic connection is given by $\nabla = d - A dz$, where $A$ is a matrix with coefficient in $K$, and vice versa.\\
-A morphism between systems of equation given by matrices $A$ and $B$ respectively is then a matrix $M : \De \to M_n(K)$ such that $\frac{dM}{dz} = BM - MA$, and we say that two systems of differential equations are \textit{equivalent} if $M(z)$ is invertible for any $z \in \De$ (or equivalently, the associate connections are isomorphic). \\
+A morphism between systems of equation given by matrices $A$ and $B$ respectively is then a matrix $M : \De^* \to M_n(K)$ such that $\frac{dM}{dz} = BM - MA$, and we say that two systems of differential equations are \textit{equivalent} if $M(z)$ is invertible for any $z \in \De$ (or equivalently, the associate connections are isomorphic). \\
+In the rest of the paragraph, we will juggle between these two definitions.
 \end{myrem}
 
+Let us compute the monodromy associated to a differential system $y' = Ay$ on $\De$.\\
+First, recall that the universal cover of $\De^*$ given by the exponential is $\{t\in \CC, |e^{2i \pi t}| < \e\}$. Multi-valued functions are thus defined on this universal cover. $t$ and $\tilde{\cdot}$ will belong to the universal cover and $z$ to $\De$.\\
+Let $\tilde{S}(t) = (\tilde{U_1},\dots,\tilde{U_n})$ a fundamental system of multi-valued solutions. $A$ is 1-periodic on the universal cover, so $t \mapsto \tilde{S}(t+1)$ is also a solution. This, there exists a constant invertible matrix $C$ such that $\tilde{S}(t+1) = \tilde{S}(t) C$.
+
+\begin{mydef}
+The matrix $C$ defined above is called the \textit{monodromy matrix} of the system.
+\end{mydef}
+
+To get back in the punctured disk, let $\Gamma$ a matrix such that $C = \exp(2i \pi \Gamma)$. Then, $\tilde{S}(t)\exp(-2i\pi t \Gamma)$ is 1-periodical on the universal cover, and one can well define $\Sigma(z) = \tilde{S}(\frac{1}{2i\pi}\log(z))e^(\log(z)\Gamma)$. Finally, we set $S(z) = \Sigma(z) e^{\log(z) \Gamma}$.
+
+\medskip
 One cannot expect to have a correspondence between the category of meromorphic connections and the one of representations of $\pi_1(\De^*)$, as the following example shows :
 
-\begin{myex}
-Define the two connections $\nabla_1 = d - dz$ and $\nabla_2 = d - \frac{dz}{z^2}$. They are not equivalent since 
+\begin{myex} \label{pathological_ex_regular_connection}
+Define the two connections $\nabla_1 = d$ and $\nabla_2 = d - \frac{dz}{z^2}$. They are not equivalent since $z \mapsto 0$ is not invertible, but they both have the trivial monodromy (the solutions of $\nabla_2$ are of the form $Ce^{-1/z}$).
 \end{myex}
+
+This phenomenon can be intuited as resulting of a \textit{bad} behavior of the solutions at $z=0$, meaning that they have there sort of an essential singularity.\\
+Thus, we introduce a \textit{nice} class of functions.
+
+\begin{mydef}
+Let $f$ be a multivalued function around 0.\\
+$f$ has \textit{moderated growth} if, for all sector $S^\eta_{(a,b)} := \{z \in D_\eta^* ~|~ \arg(z) \in (a,b)\}$ over which $f$ is defined, there exist $k \in \NN$ and $C>0$ such that :
+\begin{center}
+$\d \forall z \in S^\eta_{(a,b)}, ~|f(z)| \leq C|z^{-k}|$.
+\end{center}
+\end{mydef}
+
+\begin{myex}
+\begin{itemize}
+\item[1)] If $f$ is a single-valued function, $f$ has moderate growth if, and only if $f$ is meromorphic on $\De$ (for $\e$ small enough).
+\item[2)] $z^\alpha$ for $\alpha\in \CC$, $\log(z)^m$ for $m \in \NN$, have moderate growth.
+\end{itemize}
+\end{myex}
+
+The following result if very powerful : it gives you information on the behavior of the solutions of a differential equation just by checking a condition on the coefficients of the differential operator with a very simple computation.
+
+\begin{mytheo}[Fuchs]
+Let $P = \sum_{k=0}^n a_k(z) \frac{d^{n-k}}{dz^{n-k}}$ a differential operator on $\De$ with the $a_k$'s meromorphic.\\
+The followings are equivalent :
+\begin{itemize}
+\item[i)] the solutions of $Pu=0$ have moderate growth,
+\item[ii)] for every $1 \leq i \leq n$, $\frac{a_i}{a_0}$ has a pole of order at most $i$ at $0$.
+\end{itemize}
+\end{mytheo}
+
+These systems are those we are interested in for an expected correspondence.
+
+\begin{mydef}
+A differential operator is said to be \textit{regular} if it satifies the conditions of the previous theorem.
+\end{mydef}
+
+\begin{myex}
+\begin{itemize}
+\item[1)] As expected, the example given in \ref{pathological_ex_regular_connection} is not regular.
+\end{itemize}
+\end{myex}
+
+\begin{mytheo}
+Let $(E) : y' = Ay$ a differential system on $\De$.
+The followings are equivalent :
+\begin{itemize}
+\item[i)] $(E)$ is equivalent to a regular system,
+\item[ii)] $(E)$ is equivalent to a system $y' = \frac{B(z)}{z} y$ for some matrix $B$ holomorphic on $\De$,
+\item[iii)] $(E)$ is equivalent to a system $y' = \frac{\Gamma}{z}y$ for some constant matrix $\Gamma$.
+\end{itemize}
+\end{mytheo}
+
+\begin{mydemo}
+.
+\end{mydemo}
+
+With this theorem, the equivalent definition in terms of connections is the following :
+
+\begin{mydef}
+Let $(M,\nabla)$ be a meromorphic connection.\\
+It is said to e an \textit{regular connection} if there exists a basis $\tuple{e}{n}$ of $M$ over $K$ and holomorphic functions $(b_{i,j}(z))$ such that :
+\begin{center}
+$\d \forall i \in \llbracket 1,n \rrbracket,\forall z \in \De, ~z\nabla e_i = -\sum_{j=1}^n b_{i,j}(z) e_j$.
+\end{center}
+\end{mydef}
+
+The following theorem is what we were aiming for.
+
+\begin{mytheo}
+Two regular systems on $\De$ are equivalent if, and only if, their monodromy is conjugated.
+\end{mytheo}
+
+\begin{mydemo}
+.
+\end{mydemo}
+
+Stated like that, it is not as precise as we would have wanted for a equivalence of categories as in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.
+
+\paragraph{The local lifting}
+
+
 
 \paragraph{Global study via patching}
 

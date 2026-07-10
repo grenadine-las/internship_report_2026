@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'report_damien_junger.blg'
-[105] biber:340> INFO - === Thu Jul  9, 2026, 17:31:44
-[125] Biber.pm:419> INFO - Reading 'report_damien_junger.bcf'
-[211] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[227] Biber.pm:4419> INFO - Processing section 0
-[241] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[243] bibtex.pm:1713> INFO - LaTeX decoding ...
-[253] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[364] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[365] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[365] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[365] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[383] bbl.pm:660> INFO - Writing 'report_damien_junger.bbl' with encoding 'UTF-8'
-[388] bbl.pm:763> INFO - Output to report_damien_junger.bbl
+[101] biber:340> INFO - === Fri Jul 10, 2026, 10:37:10
+[121] Biber.pm:419> INFO - Reading 'report_damien_junger.bcf'
+[203] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[220] Biber.pm:4419> INFO - Processing section 0
+[233] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[234] bibtex.pm:1713> INFO - LaTeX decoding ...
+[244] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[353] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[353] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[353] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[353] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[370] bbl.pm:660> INFO - Writing 'report_damien_junger.bbl' with encoding 'UTF-8'
+[375] bbl.pm:763> INFO - Output to report_damien_junger.bbl

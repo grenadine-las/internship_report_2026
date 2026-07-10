@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.16)  9 JUL 2026 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.16)  10 JUL 2026 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1589,32 +1589,32 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 41
-9.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 42
+0.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./report_damien_junger.aux)
 \openout1 = `report_damien_junger.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 419.
-LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 420.
+LaTeX Font Info:    ... okay on input line 420.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1653,8 +1653,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report_damien_junger.bbl' found.
 
 (./report_damien_junger.bbl)
-Package biblatex Info: Reference section=0 on input line 419.
-Package biblatex Info: Reference segment=0 on input line 419.
+Package biblatex Info: Reference section=0 on input line 420.
+Package biblatex Info: Reference segment=0 on input line 420.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-english.trsl
@@ -1662,26 +1662,26 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 419.
-Package hyperref Info: Link coloring OFF on input line 419.
+or `english'. on input line 420.
+Package hyperref Info: Link coloring OFF on input line 420.
  (./report_damien_junger.out) (./report_damien_junger.out)
 \@outlinefile=\write6
 \openout6 = `report_damien_junger.out'.
 
 \c@lstlisting=\count547
-LaTeX Info: Redefining \microtypecontext on input line 419.
-Package microtype Info: Applying patch `item' on input line 419.
-Package microtype Info: Applying patch `toc' on input line 419.
-Package microtype Info: Applying patch `eqnum' on input line 419.
-Package microtype Info: Applying patch `footnote' on input line 419.
-Package microtype Info: Applying patch `verbatim' on input line 419.
+LaTeX Info: Redefining \microtypecontext on input line 420.
+Package microtype Info: Applying patch `item' on input line 420.
+Package microtype Info: Applying patch `toc' on input line 420.
+Package microtype Info: Applying patch `eqnum' on input line 420.
+Package microtype Info: Applying patch `footnote' on input line 420.
+Package microtype Info: Applying patch `verbatim' on input line 420.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 419.
+LaTeX Info: Redefining \showhyphens on input line 420.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1690,10 +1690,10 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-<LOGO-UFR-MAI.jpg, id=107, 730.73pt x 132.495pt>
+<LOGO-UFR-MAI.jpg, id=111, 730.73pt x 132.495pt>
 File: LOGO-UFR-MAI.jpg Graphic file (type jpg)
 <use LOGO-UFR-MAI.jpg>
-Package pdftex.def Info: LOGO-UFR-MAI.jpg  used on input line 431.
+Package pdftex.def Info: LOGO-UFR-MAI.jpg  used on input line 432.
 (pdftex.def)             Requested size: 284.52756pt x 51.58994pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/17.28'.
@@ -1730,7 +1730,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.500 
+l.501 
        [1] (./report_damien_junger.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 .
@@ -1830,10 +1830,12 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
-[4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
+Package mdframed Info: Not enough space on this page on input line 58.
+[4]
+Package mdframed Info: Not enough space on this page on input line 58.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 62.
@@ -1854,13 +1856,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 96.
-Package mdframed Info: Not enough space on this page on input line 97.
- [5{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-ts1.enc}]
-Package mdframed Info: Not enough space on this page on input line 97.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
+Package mdframed Info: Not enough space on this page on input line 113.
+ [5{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-ts1.enc}]
+Package mdframed Info: Not enough space on this page on input line 113.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 116.
@@ -1882,14 +1884,16 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 140.
- [6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 144.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 148.
-)
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 159.
+ [6])
 (./chapters/prerequisites/complex_geo.tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1909,11 +1913,12 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
- [7]
-Package mdframed Info: Not enough space on this page on input line 36.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
+Package mdframed Info: Not enough space on this page on input line 43.
+ [7]
+Package mdframed Info: Not enough space on this page on input line 43.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
@@ -1926,12 +1931,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 85.
-Package mdframed Info: Not enough space on this page on input line 91.
- [8]
-Package mdframed Info: Not enough space on this page on input line 91.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
+ [8]
+Package mdframed Info: Not enough space on this page on input line 97.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 100.
@@ -1941,12 +1945,10 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 130.
-Package mdframed Info: Not enough space on this page on input line 131.
- [9]
-Package mdframed Info: Not enough space on this page on input line 131.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 134.
+ [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 147.
@@ -1961,14 +1963,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
  
  []
 
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 179.
-[10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 182.
-)) (./chapters/rh_correspondence.tex [11]
+[10])) (./chapters/rh_correspondence.tex [11]
 (./chapters/rh-correspondence/cor_algebraic_topology.tex)
 (./chapters/rh-correspondence/holomorphic_case.tex
 Package mdframed Info: mdframed detected package amsthm 
@@ -1993,31 +1991,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 [13]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 21.
+(mdframed)              on input line 22.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 30.
+(mdframed)              on input line 31.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 34.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
- 
- []
-
+(mdframed)              on input line 35.
+ [14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 41.
-[14]
-Package mdframed Info: Not enough space on this page on input line 42.
+(mdframed)              on input line 45.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 47.
-)) (./chapters/periods.tex [15]) [16
+(mdframed)              on input line 53.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 61.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 69.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 77.
+ [15]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 89.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 93.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 99.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 109.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 115.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 125.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 129.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 141.
+ [16])) (./chapters/periods.tex [17]) [18
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-17.
+18.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2026,7 +2052,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17
+ [19
 
 ] (./report_damien_junger.aux)
  ***********
@@ -2034,17 +2060,17 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `report_damien_junger.out' has not changed.
-(rerunfilecheck)             Checksum: 4B1ACD2F9034D26C99FE50231182AFAF;2777.
+(rerunfilecheck)             Checksum: 5893A4D443A708636E0DC1FAE9F572E8;3010.
 Package logreq Info: Writing requests to 'report_damien_junger.run.xml'.
 \openout1 = `report_damien_junger.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50700 strings out of 474222
- 1054202 string characters out of 5748733
- 1972000 words of memory out of 5000000
- 71869 multiletter control sequences out of 15000+600000
- 620930 words of font info for 158 fonts, out of 8000000 for 9000
+ 50754 strings out of 474222
+ 1055176 string characters out of 5748733
+ 1972794 words of memory out of 5000000
+ 71901 multiletter control sequences out of 15000+600000
+ 621419 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,97p,1017b,2006s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
@@ -2058,11 +2084,12 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/rsfs/rsfs10.pfb>
-Output written on report_damien_junger.pdf (19 pages, 359595 bytes).
+nts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/stmaryrd/stmary10.pfb>
+Output written on report_damien_junger.pdf (21 pages, 374718 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 35618 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 429 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 35626 words of extra memory for PDF output out of 35830 (max. 10000000)
 
