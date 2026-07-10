@@ -14,7 +14,7 @@ We will denote $\De$ the disk centered at 0 of radius $\e$ and $\De^*$ the assoc
 
 \medskip
 If we want to translate the definition of a connection on $\De$, we would say that such a connection is a locally free sheaf of modules $\erond$ over the sheaf of rings of meromorphic function defined on $\De$ with only a pole at $0$, equipped with a map $\nabla : \erond \to \erond \tensor{\holo_{\De}} \Omega^1_{\De}$ with linearity and Liebniz propreties.\\
-Even if it means reducing the radius of the disk, we can assume that $\erond$ is free. Moreover, it's more convenient to work with the field of germs of meromorphic functions around 0 denoted $K$. \\
+We can assume that $\erond$ is free. Moreover, it's more convenient to work with the field of germs of meromorphic functions around 0 denoted $K$. \\
 Having localised our study, we then won't work with sheaf in this paragraph. We basically follow Haefliger's lecture in \cite{borel_dmodules}, and the theory exposed is usually refered to as the \textit{Fuchs theory}.\\
 This shift of persective leads us to the following definition.
 
@@ -39,13 +39,13 @@ In the rest of the paragraph, we will juggle between these two definitions.
 
 Let us compute the monodromy associated to a differential system $y' = Ay$ on $\De$.\\
 First, recall that the universal cover of $\De^*$ given by the exponential is $\{t\in \CC, |e^{2i \pi t}| < \e\}$. Multi-valued functions are thus defined on this universal cover. $t$ and $\tilde{\cdot}$ will belong to the universal cover and $z$ to $\De$.\\
-Let $\tilde{S}(t) = (\tilde{U_1},\dots,\tilde{U_n})$ a fundamental system of multi-valued solutions. $A$ is 1-periodic on the universal cover, so $t \mapsto \tilde{S}(t+1)$ is also a solution. This, there exists a constant invertible matrix $C$ such that $\tilde{S}(t+1) = \tilde{S}(t) C$.
+Let $\tilde{S}(t) = (\tilde{U}_1,\dots,\tilde{U}_n)$ a fundamental system of multi-valued solutions. $A$ is 1-periodic on the universal cover, so $t \mapsto \tilde{S}(t+1)$ is also a solution. This, there exists a constant invertible matrix $C$ such that $\tilde{S}(t+1) = \tilde{S}(t) C$.
 
 \begin{mydef}
 The matrix $C$ defined above is called the \textit{monodromy matrix} of the system.
 \end{mydef}
 
-To get back in the punctured disk, let $\Gamma$ a matrix such that $C = \exp(2i \pi \Gamma)$. Then, $\tilde{S}(t)\exp(-2i\pi t \Gamma)$ is 1-periodical on the universal cover, and one can well define $\Sigma(z) = \tilde{S}(\frac{1}{2i\pi}\log(z))e^(\log(z)\Gamma)$. Finally, we set $S(z) = \Sigma(z) e^{\log(z) \Gamma}$.
+To get back in the punctured disk, let $\Gamma$ a matrix such that $C = \exp(2i \pi \Gamma)$. Then, $\tilde{S}(t)\exp(-2i\pi t \Gamma)$ is 1-periodical on the universal cover, and one can well define $\Sigma(z) = \tilde{S}(\frac{1}{2i\pi}\log(z))e^{\log(z)\Gamma}$. Finally, we set $S(z) = \Sigma(z) e^{\log(z) \Gamma}$.
 
 \medskip
 One cannot expect to have a correspondence between the category of meromorphic connections and the one of representations of $\pi_1(\De^*)$, as the following example shows :
@@ -90,9 +90,7 @@ A differential operator is said to be \textit{regular} if it satifies the condit
 \end{mydef}
 
 \begin{myex}
-\begin{itemize}
-\item[1)] As expected, the example given in \ref{pathological_ex_regular_connection} is not regular.
-\end{itemize}
+As expected, the example given in \ref{pathological_ex_regular_connection} is not regular.
 \end{myex}
 
 \begin{mytheo}
@@ -121,7 +119,7 @@ $\d \forall i \in \llbracket 1,n \rrbracket,\forall z \in \De, ~z\nabla e_i = -\
 
 The following theorem is what we were aiming for.
 
-\begin{mytheo}
+\begin{mytheo} \label{regular_connections_monodromy}
 Two regular systems on $\De$ are equivalent if, and only if, their monodromy is conjugated.
 \end{mytheo}
 
@@ -131,7 +129,33 @@ Two regular systems on $\De$ are equivalent if, and only if, their monodromy is 
 
 Stated like that, it is not as precise as we would have wanted for a equivalence of categories as in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.
 
+
+
 \paragraph{The local lifting}
+
+This paragraph is partially inspired by \cite{szamuely_galois}, §2.7.\\
+The precise Riemann-Hilbert correspondence will be stated next paragraph, based on what we already did in the holomorphic case. In this one, we try to construct a unique (regular) meromorphic connection on $\De$ given a holomorphic connection on $\De^*$.\\
+We return to the language of sheaves. Indeed, according to a general fact on non-compact Riemann surfaces, a locally free $\holo_{\De^*}$-module on $\De$ is actually free (for example, see [\cite{forster_riemann}, Theorem 30.4]).
+We will denote by $\holo_{\De}(*0)$ the sheaf of meromorphic functions on $\De$ with a pole at $z=0$.
+
+\begin{myprop}
+Let $(\erond,\nabla)$ a holomorphic connection on $\De^*$.\\
+There exists meromorphic connection $(\bar{\erond},\bar{\nabla})$ on $\De$ which agrees with $(\erond,\nabla)$ on $\De$. This connection is unique up to isomorphisms (of meromorphic connections).
+\end{myprop}
+
+\begin{mydemo}
+We can assume $\erond = \holo_{\De}^r$ and $\nabla = d - Adz$. Set $S(z)$ a fundamental system of solutions. Let $C$ the monodromy matrix associated to $\nabla$, $S(z)$ , and let $B$ a matrix such that $C = \exp(2i\pi B)$. We consider the connection $\bar{nabla} = d - \frac{B}{z}dz$. A fundamental system of solutions is given by $z^B = e^{B\log(z)}$.\\
+Let $U(z) = S(z)z^{-B}$. Then 
+\begin{center}
+$U(ze^{2i\pi}) = S(ze^{2i\pi})e^{-B\log(ze^{2i\pi})} = S(z)C e^{-2i\pi B}z^{-B} = U(z)$.
+\end{center}
+Here, by an abuse of notation, $z e^{2i\pi}$ denotes the composition by the simple loop going around 0 counter-clockwise.\\
+Therefore, $U(z)$ is single-valued, and then holomorphic on $\De^*$. Its inverse is too, so it defines a isomorphism between $\nabla$ and$\bar{\nabla}$.
+
+\smallskip
+Uniqueness comes from \ref{regular_connections_monodromy}.
+\end{mydemo}
+
 
 
 

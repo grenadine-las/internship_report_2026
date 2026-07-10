@@ -127,6 +127,31 @@
       \field{year}{1970}
       \true{nocite}
     \endentry
+    \entry{forster_riemann}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f8e53a8257ed07acdf13331b689a4e08}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={Otto},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f8e53a8257ed07acdf13331b689a4e08}
+      \strng{fullhash}{f8e53a8257ed07acdf13331b689a4e08}
+      \strng{bibnamehash}{f8e53a8257ed07acdf13331b689a4e08}
+      \strng{authorbibnamehash}{f8e53a8257ed07acdf13331b689a4e08}
+      \strng{authornamehash}{f8e53a8257ed07acdf13331b689a4e08}
+      \strng{authorfullhash}{f8e53a8257ed07acdf13331b689a4e08}
+      \field{labelalpha}{For81}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lectures on Riemann Surfaces}
+      \field{year}{1981}
+    \endentry
     \entry{HTT_dmodules}{book}{}
       \name{author}{3}{}{%
         {{hash=34da163046465e6a62ceb34ba3384f42}{%
@@ -282,7 +307,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Algebraic differential equations : an introduction to local systems, connections, and $p$-curvature}
       \field{year}{2025}
-      \true{nocite}
       \verb{urlraw}
       \verb https://math.mit.edu/~poonen/papers/connections.pdf
       \endverb
@@ -314,7 +338,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Galois Groups and Fundamental Groups}
       \field{year}{2012}
-      \true{nocite}
     \endentry
     \entry{voisin_hodge}{book}{}
       \name{author}{1}{}{%
@@ -340,7 +363,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Théorie de Hodge et géométrie algébrique complexe}
       \field{year}{2002}
-      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

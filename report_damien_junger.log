@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.16)  10 JUL 2026 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.16)  10 JUL 2026 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1980,15 +1980,21 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 56.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 58.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 102.
  [12
 
-])
+]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 102.
+ [13])
 (./chapters/rh-correspondence/meromorphic_case.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[13]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
@@ -1998,7 +2004,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
- [14]
+[14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 45.
@@ -2015,6 +2021,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
  [15]
+Package mdframed Info: Not enough space on this page on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 89.
@@ -2023,23 +2030,30 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 99.
+(mdframed)              on input line 97.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 109.
+(mdframed)              on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 115.
+(mdframed)              on input line 113.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 125.
+(mdframed)              on input line 122.
+ [16]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 129.
+(mdframed)              on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 141.
- [16])) (./chapters/periods.tex [17]) [18
+(mdframed)              on input line 142.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 165.
+)) (./chapters/periods.tex [17]) [18
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
@@ -2066,11 +2080,11 @@ Package logreq Info: Writing requests to 'report_damien_junger.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50754 strings out of 474222
- 1055176 string characters out of 5748733
- 1972794 words of memory out of 5000000
- 71901 multiletter control sequences out of 15000+600000
- 621419 words of font info for 163 fonts, out of 8000000 for 9000
+ 50770 strings out of 474222
+ 1055553 string characters out of 5748733
+ 1980119 words of memory out of 5000000
+ 71911 multiletter control sequences out of 15000+600000
+ 621597 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,97p,1017b,2006s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
@@ -2086,10 +2100,10 @@ r/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/stmaryrd/stmary10.pfb>
-Output written on report_damien_junger.pdf (21 pages, 374718 bytes).
+Output written on report_damien_junger.pdf (21 pages, 379416 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 346 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
  35626 words of extra memory for PDF output out of 35830 (max. 10000000)
 
