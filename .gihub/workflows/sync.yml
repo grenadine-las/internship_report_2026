@@ -19,7 +19,7 @@ jobs:
       with:
         source_file: 'report_damien_junger.pdf' # À MODIFIER : Le fichier à copier dans le Dossier A
         destination_repo: 'grenadinelas/site-web' # À MODIFIER : Le dépôt du Dossier B
-        destination_folder: '/home/grenadine/Desktop/site web/pdf' # À MODIFIER : Où placer le fichier dans le site web (laisser vide '' pour la racine)
+        destination_folder: 'Desktop/site web/pdf' # À MODIFIER : Où placer le fichier dans le site web (laisser vide '' pour la racine)
         user_email: 'damien.junger1@gmail.com' # À MODIFIER
         user_name: 'grenadinelas' # À MODIFIER
         commit_message: 'Mise à jour automatique du fichier depuis le dépôt source'
