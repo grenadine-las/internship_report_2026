@@ -14,5 +14,5 @@
 \contentsline {paragraph}{\numberline {a.}Elements of Fuchs theory}{14}{paragraph.2.3.1.1}%
 \contentsline {paragraph}{\numberline {b.}The local lifting}{17}{paragraph.2.3.1.2}%
 \contentsline {paragraph}{\numberline {c.}Global study via patching}{17}{paragraph.2.3.1.3}%
-\contentsline {subsubsection}{\numberline {II.3.2}Sketch of a proof in higher dimension}{17}{subsubsection.2.3.2}%
-\contentsline {section}{\numberline {III}Periods}{18}{section.3}%
+\contentsline {subsubsection}{\numberline {II.3.2}Sketch of a proof in higher dimension}{18}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {III}Periods}{19}{section.3}%

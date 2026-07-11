@@ -127,7 +127,7 @@ $((\--)^\sharp,\text{Forget})$ is an adjoint pair of functors between $\text{PSh
 \end{myprop}
 
 \begin{mydemo}
-blablabla
+.
 \end{mydemo}
 
 \begin{myex}
@@ -141,7 +141,7 @@ A complex $0 \to \sheaf \to \mathcal{G} \to \mathcal{H} \to 0$ is exact if, and 
 \end{myprop}
 
 \begin{mydemo}
-blablabla
+.
 \end{mydemo}
 
 \begin{myrem}
@@ -157,3 +157,18 @@ $
 \end{center}
 that is not exact over $\CC^*$, because the map $\holo_{\CC^*} \to \holo_{\CC^*}^*$ is not surjective : the map $z \mapsto z$ does not belong to the image since $\log$ is not well defined over $\CC^*$.
 \end{myrem}
+
+
+\begin{myprop} \label{patching_sheaf}
+Let $X = \cup_{i\in I} U_i$ an open covering of $X$. For every $i\in I$, let $\sheaf_i$ a sheaf on $U_i$.\\
+Assume that for every $i \neq j \in I$, there exists an isomorphism 
+\begin{center}
+$\theta_{i,j} : \sheaf_i|_{U_i \cap U_j} \overset{\sim}{\to} \sheaf_j|_{U_i \cap U_j}$,
+\end{center}
+satisfying the condition $\theta_{j,k} \circ \theta _{i,j} = \theta_{i,k}$ on $U_i \cap U_j \cap U_k$ for every triplet of distinct elements of $I$.\\
+Then, there exists a sheaf $\sheaf$ on $X$ such that for every $i\in I, \sheaf|_{U_i} = \sheaf_i$. Moreover, this sheaf is unique, up to unique isomorphism.
+\end{myprop}
+
+\begin{mydemo}
+.
+\end{mydemo}

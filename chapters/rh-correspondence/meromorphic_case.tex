@@ -127,9 +127,12 @@ Two regular systems on $\De$ are equivalent if, and only if, their monodromy is 
 .
 \end{mydemo}
 
-Stated like that, it is not as precise as we would have wanted for a equivalence of categories as in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.
+Stated like that, it is not as precise as we would have wanted for a equivalence of categories as in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.\\
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
 
 \paragraph{The local lifting}
 
@@ -138,7 +141,7 @@ The precise Riemann-Hilbert correspondence will be stated next paragraph, based 
 We return to the language of sheaves. Indeed, according to a general fact on non-compact Riemann surfaces, a locally free $\holo_{\De^*}$-module on $\De$ is actually free (for example, see [\cite{forster_riemann}, Theorem 30.4]).
 We will denote by $\holo_{\De}(*0)$ the sheaf of meromorphic functions on $\De$ with a pole at $z=0$.
 
-\begin{myprop}
+\begin{myprop} \label{lifting_sheaf}
 Let $(\erond,\nabla)$ a holomorphic connection on $\De^*$.\\
 There exists meromorphic connection $(\bar{\erond},\bar{\nabla})$ on $\De$ which agrees with $(\erond,\nabla)$ on $\De$. This connection is unique up to isomorphisms (of meromorphic connections).
 \end{myprop}
@@ -150,25 +153,59 @@ Let $U(z) = S(z)z^{-B}$. Then
 $U(ze^{2i\pi}) = S(ze^{2i\pi})e^{-B\log(ze^{2i\pi})} = S(z)C e^{-2i\pi B}z^{-B} = U(z)$.
 \end{center}
 Here, by an abuse of notation, $z e^{2i\pi}$ denotes the composition by the simple loop going around 0 counter-clockwise.\\
-Therefore, $U(z)$ is single-valued, and then holomorphic on $\De^*$. Its inverse is too, so it defines a isomorphism between $\nabla$ and$\bar{\nabla}$.
+Therefore, $U(z)$ is single-valued, and then holomorphic on $\De^*$. Its inverse is too, so it defines a isomorphism between $(\erond,\nabla)$ and $(\holo_{\De}(*0)^r,\bar{\nabla}$).
 
 \smallskip
 Uniqueness comes from \ref{regular_connections_monodromy}.
 \end{mydemo}
 
-
-
+\smallskip
 
 \paragraph{Global study via patching}
 
-\begin{mytheo}
-i
+We will state the "meromorphic" Riemann-Hilbert on $\mathbb{P}^1_\CC$ minus a finite set of points. We firstly introduce some global notation compared with what we did the last two paragraphs, and then state and proof the result.\\
+Some ideas comes from \cite{szamuely_galois}.
 
+\medskip
+In this paragraph, we set $X = \mathbb{P}^1_\CC$, $D = \{s_1,\dots,s_k\} \subset X$ and $Y = X \setminus D$.\\
+We denote by $\holo_X(*D)$ the sheaf of meromorphic functions on $X$ with poles along $D$.
+
+\begin{mydef}
+Let $\bar{\erond}$ a locally free $\holo_X(*D)$-modules.\\
+A \textit{meromorphic connection} on $\bar{\erond}$ is a $\CC$-linear map $\bar{\nabla}:\bar{\erond} \to \bar{\erond} \tensor{\holo_X(*D)} \Omega^1_X$ satisfying the Liebniz rule.
+\end{mydef}
+
+\begin{mydef}
+We define the category $\locfree^{\bar{\nabla}}(X,D)$ with
+\begin{itemize}
+\item locally free $\holo_X(*D)$-modules equipped with a meromorphic (flat) connection as objects,
+\item morphisms of $\holo_X(*D)$-modules commuting with the connections as morphisms.
+\end{itemize}
+\end{mydef}
+
+\begin{mytheo}
+The restriction functor 
+\begin{center}
+$\locfree^{\bar{\nabla}}(X,D) \to \locfree^{\nabla}(Y)$
+\end{center}
+induces an equivalence of categories.
 \end{mytheo}
 
+\begin{mydemo}
+First, we construct the inverse morphism.
 
+\smallskip
+Let $D_i$ small disks around each $s_i$ that do not meet. On each $D_i$, let $(\bar{\erond}_i,\bar{\nabla}_i)$ the unique (up to isomorphisms) lifting of $(\erond_i,\nabla_i) := (\erond,\nabla)|_{D_i}$ given by \ref{lifting_sheaf}. On an open set $U$ containing the complementary of $\bigcup_{i=1}^k D_i$ that does not meet $S$, we set $\bar{\erond} = \erond$. Then, we can glue back the sheaves on $X = \bigcup_{i=1}^k D_i \cup U$ by \ref{patching_sheaf} (the isomorphisms $\theta_{i,j}$ are just given by the ones coming from the construction of the $\bar{\erond}_i$, and the triple intersection condition is empty), which gives us the sheaf $\bar{\erond}$ on $X$ that agrees with $\erond$ on $Y$.
+\end{mydemo}
 
+With the work done the previous subsection, we have the correspondence as wished :
 
+\begin{mycoro}[Riemann-Hilbert correspondence, meromorphic case, dimension 1]
+There is an equivalence of categories :
+\begin{center}
+$\locfree^{\bar{\nabla}}(X,D) \cong \locsys(Y)$.
+\end{center}
+\end{mycoro}
 
 
 
