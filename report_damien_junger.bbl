@@ -186,7 +186,6 @@
       \field{labeltitlesource}{title}
       \field{title}{\textit{D}-Modules, Perverse Sheaves, and Reprensentation Theory}
       \field{year}{2008}
-      \true{nocite}
     \endentry
     \entry{hulse_gauss_manin}{online}{}
       \name{author}{1}{}{%
@@ -244,6 +243,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Complex geometry, an introduction}
       \field{year}{2004}
+      \true{nocite}
     \endentry
     \entry{katz}{inproceedings}{}
       \name{author}{1}{}{%

@@ -193,5 +193,17 @@ We define the category $\locfreenabla(X)$ with
 \end{center}
 commutes, as morphisms between $(\erond_1,\nabla_1)$ and $(\erond_2,\nabla_2)$.
 \end{itemize}
-
 \end{mydef}
+
+Here are some algebraic construction one can obtain with connections :
+
+\begin{myprop} \label{algebraic_construction_connection}
+Let $(\erond_1,\nabla_1)$ and $(\erond_2,\nabla_2)$ two connections on $X$. The followings are also connections :
+\begin{itemize}
+\item[1)] $(\erond_1^*,(\-- \otimes 1)\circ \nabla_1)$, 
+\item[2)] $(\erond_1 \oplus \erond_2, \nabla_1 \oplus \nabla_2)$,
+\item[3)] $(\erond_1 \tensor{\holo_X} \erond_2, \nabla_1 \otimes 1 + 1 \otimes \nabla_2)$
+\item[4)] $(\connHom_{\holo_X}(\erond_1,\erond_2),\phi \mapsto (\nabla_2 \circ \phi) - (\phi \otimes 1) \circ \nabla_1)$
+\end{itemize}
+\end{myprop}
+

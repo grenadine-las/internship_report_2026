@@ -9,7 +9,7 @@ For a Riemann surface (meaning, $\dim(X) =1$), the previous result gives us that
 
 \paragraph{Elements of Fuchs theory}
 
-We focus out study around each point of $S$. Without loss of generality, the case around $z=0$ is sufficient.\\
+We focus out study around each point of $S$. Without loss of generality, the case around $z=0$ is sufficient.
 We will denote $\De$ the disk centered at 0 of radius $\e$ and $\De^*$ the associated punctured disk at $z=0$.
 
 \medskip
@@ -25,17 +25,21 @@ $\d \forall (h,u) \in K \times M : \nabla(hu)  = \frac{dh}{dz}u + h \nabla u$.
 \end{center}
 \end{mydef}
 
+
 With this definition, a morphism of connection is of linear morphism commuting with connections.
+
 
 \begin{myrem}
 The ring $D[z^{-1}]$ of germs of differential operators with meromorphic coefficients acts on a meromorphic connection $(M,\nabla)$ by $Pu = \sum_{j=1}^N a_j \nabla^j u$ if $P = \sum_{j=1}^N a_j \frac{d^j}{dz^j}$ and $u\in M$.
 \end{myrem}
+
 
 \begin{myrem}
 As explained in \ref{connections_diff_eq}, given a basis of $M$, a connection map on $M$ is equivalent to a system of differential equations : a meromorphic connection is given by $\nabla = d - A dz$, where $A$ is a matrix with coefficient in $K$, and vice versa.\\
 A morphism between systems of equation given by matrices $A$ and $B$ respectively is then a matrix $M : \De^* \to M_n(K)$ such that $\frac{dM}{dz} = BM - MA$, and we say that two systems of differential equations are \textit{equivalent} if $M(z)$ is invertible for any $z \in \De$ (or equivalently, the associate connections are isomorphic). \\
 In the rest of the paragraph, we will juggle between these two definitions.
 \end{myrem}
+
 
 Let us compute the monodromy associated to a differential system $y' = Ay$ on $\De$.\\
 First, recall that the universal cover of $\De^*$ given by the exponential is $\{t\in \CC, |e^{2i \pi t}| < \e\}$. Multi-valued functions are thus defined on this universal cover. $t$ and $\tilde{\cdot}$ will belong to the universal cover and $z$ to $\De$.\\
@@ -47,15 +51,19 @@ The matrix $C$ defined above is called the \textit{monodromy matrix} of the syst
 
 To get back in the punctured disk, let $\Gamma$ a matrix such that $C = \exp(2i \pi \Gamma)$. Then, $\tilde{S}(t)\exp(-2i\pi t \Gamma)$ is 1-periodical on the universal cover, and one can well define $\Sigma(z) = \tilde{S}(\frac{1}{2i\pi}\log(z))e^{\log(z)\Gamma}$. Finally, we set $S(z) = \Sigma(z) e^{\log(z) \Gamma}$.
 
+
 \medskip
 One cannot expect to have a correspondence between the category of meromorphic connections and the one of representations of $\pi_1(\De^*)$, as the following example shows :
+
 
 \begin{myex} \label{pathological_ex_regular_connection}
 Define the two connections $\nabla_1 = d$ and $\nabla_2 = d - \frac{dz}{z^2}$. They are not equivalent since $z \mapsto 0$ is not invertible, but they both have the trivial monodromy (the solutions of $\nabla_2$ are of the form $Ce^{-1/z}$).
 \end{myex}
 
+
 This phenomenon can be intuited as resulting of a \textit{bad} behavior of the solutions at $z=0$, meaning that they have there sort of an essential singularity.\\
 Thus, we introduce a \textit{nice} class of functions.
+
 
 \begin{mydef}
 Let $f$ be a multivalued function around 0.\\
@@ -65,6 +73,7 @@ $\d \forall z \in S^\eta_{(a,b)}, ~|f(z)| \leq C|z^{-k}|$.
 \end{center}
 \end{mydef}
 
+
 \begin{myex}
 \begin{itemize}
 \item[1)] If $f$ is a single-valued function, $f$ has moderate growth if, and only if $f$ is meromorphic on $\De$ (for $\e$ small enough).
@@ -72,7 +81,9 @@ $\d \forall z \in S^\eta_{(a,b)}, ~|f(z)| \leq C|z^{-k}|$.
 \end{itemize}
 \end{myex}
 
+
 The following result if very powerful : it gives you information on the behavior of the solutions of a differential equation just by checking a condition on the coefficients of the differential operator with a very simple computation.
+
 
 \begin{mytheo}[Fuchs]
 Let $P = \sum_{k=0}^n a_k(z) \frac{d^{n-k}}{dz^{n-k}}$ a differential operator on $\De$ with the $a_k$'s meromorphic.\\
@@ -85,13 +96,16 @@ The followings are equivalent :
 
 These systems are those we are interested in for an expected correspondence.
 
+
 \begin{mydef}
 A differential operator is said to be \textit{regular} if it satifies the conditions of the previous theorem.
 \end{mydef}
 
+
 \begin{myex}
 As expected, the example given in \ref{pathological_ex_regular_connection} is not regular.
 \end{myex}
+
 
 \begin{mytheo}
 Let $(E) : y' = Ay$ a differential system on $\De$.
@@ -117,7 +131,9 @@ $\d \forall i \in \llbracket 1,n \rrbracket,\forall z \in \De, ~z\nabla e_i = -\
 \end{center}
 \end{mydef}
 
+
 The following theorem is what we were aiming for.
+
 
 \begin{mytheo} \label{regular_connections_monodromy}
 Two regular systems on $\De$ are equivalent if, and only if, their monodromy is conjugated.
@@ -127,7 +143,28 @@ Two regular systems on $\De$ are equivalent if, and only if, their monodromy is 
 .
 \end{mydemo}
 
-Stated like that, it is not as precise as we would have wanted for a equivalence of categories like in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.\\
+Stated like that, it is not as precise as we would have wanted for a equivalence of categories like in \ref{Holomorphic version on a complex manifold}. The next paragraph will make it more accurate, based on the theorem above.
+
+\medskip
+First, a result on the good behavior of algebraic construction (see \ref{algebraic_construction_connection}) with regularity :
+
+
+\begin{myprop}[\cite{HTT_dmodules}, Proposition 5.1.11] \label{algebraic_regular_connection}
+Let $M$ and $N$ be regular meromorphic connections.\\
+Then $\Hom_K(M,N)$ and $M \tensor{K} N$ are regular.
+\end{myprop}
+
+\begin{mydemo}
+.
+\end{mydemo}
+
+
+
+
+
+
+
+
 
 
 
@@ -136,18 +173,20 @@ Stated like that, it is not as precise as we would have wanted for a equivalence
 
 \paragraph{The local lifting}
 
-This paragraph is partially inspired by [\cite{szamuely_galois}, §2.7] and [\citep{HTT_dmodules}, Lemma 5.2.19] for the lifting of morphisms.\\
+
+This paragraph is partially inspired by [\cite{szamuely_galois}, §2.7] and [\cite{HTT_dmodules}, Lemma 5.2.19] for the lifting of morphisms.\\
 The precise Riemann-Hilbert correspondence will be stated next paragraph, based on what we already did in the holomorphic case. In this one, we try to construct a unique (regular) meromorphic connection on $\De$ given a holomorphic connection on $\De^*$.\\
 We return to the language of sheaves. Indeed, according to a general fact on non-compact Riemann surfaces, a locally free $\holo_{\De^*}$-module on $\De$ is actually free (for example, see [\cite{forster_riemann}, Theorem 30.4]).
 We will denote by $\holo_{\De}(*0)$ the sheaf of meromorphic functions on $\De$ with a pole at $z=0$.
 
-\begin{myprop} \label{lifting_sheaf}
+
+\begin{myprop} \label{local_lifting_sheaf}
 Let $(\erond,\nabla)$ a holomorphic connection on $\De^*$.\\
-There exists meromorphic connection $(\bar{\erond},\bar{\nabla})$ on $\De$ which agrees with $(\erond,\nabla)$ on $\De$. This connection is unique up to isomorphisms (of meromorphic connections).
+There exists regular meromorphic connection $(\bar{\erond},\bar{\nabla})$ on $\De$ which agrees with $(\erond,\nabla)$ on $\De$. This connection is unique up to isomorphisms (of meromorphic connections).
 \end{myprop}
 
 \begin{mydemo}
-We can assume $\erond = \holo_{\De}^r$ and $\nabla = d - Adz$. Set $S(z)$ a fundamental system of solutions. Let $C$ the monodromy matrix associated to $\nabla$, $S(z)$ , and let $B$ a matrix such that $C = \exp(2i\pi B)$. We consider the connection $\bar{nabla} = d - \frac{B}{z}dz$. A fundamental system of solutions is given by $z^B = e^{B\log(z)}$.\\
+We can assume $\erond = \holo_{\De}^r$ and $\nabla = d - Adz$. Set $S(z)$ a fundamental system of solutions. Let $C$ the monodromy matrix associated to $\nabla$, $S(z)$ a fundamental system of solutions, and let $B$ a matrix such that $C = \exp(2i\pi B)$. We consider the connection $\bar{\nabla} = d - \frac{B}{z}dz$. A fundamental system of solutions is given by $z^B = e^{B\log(z)}$.\\
 Let $U(z) = S(z)z^{-B}$. Then 
 \begin{center}
 $U(ze^{2i\pi}) = S(ze^{2i\pi})e^{-B\log(ze^{2i\pi})} = S(z)C e^{-2i\pi B}z^{-B} = U(z)$.
@@ -159,36 +198,20 @@ Therefore, $U(z)$ is single-valued, and then holomorphic on $\De^*$. Its inverse
 Uniqueness comes from \ref{regular_connections_monodromy}.
 \end{mydemo}
 
-To make a functorial statement, we need additionally an extension of morphism, and we will actually use the previous proposition for this proof.
 
-\begin{myprop}
-Let $\phi: (erond_1,nabla_1) \to (erond_2,nabla_2)$ a morphism betweet holomorphic connections.\\
-Then, there exists a meromorphic connection $\bar{\phi} : (\bar{erond_1},\bar{nabla_1}) \to (\bar{erond_2},\bar{nabla_2})$ that restricts to $\phi$.
-\end{myprop}
-
-We will need an intermediate result, which follows the definitions.
-
-\begin{mylemme}
-Let $(\bar{erond_1},\bar{nabla_1})$ and $(\bar{erond_2},\bar{nabla_2})$ two connections on $\De$.\\
-Then,
-\begin{center}
-$\Gamma(X,Hom_$
-\end{center}
-\end{mylemme}
-
-!!!!!! recall the notations : introduce the difference between $Hom$ and $\Hom$, state the lemma, section on $U$ = $\Gamma(U,\sheaf)$!!!
-
-\begin{mydemo}
-\\
-Set $\erond = ...$ and $\bar{\erond} = ...$, where $k$. By \ref{lifting_sheaf} the restriction map
-\begin{center}
-$\to$
-\end{center}
-is a bijection. 
-\end{mydemo}
+To make a functorial statement, we need additionally an extension of morphisms, we will directly do it for the global framework.
 
 
-\smallskip
+
+
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,10 +225,12 @@ Some ideas comes from \cite{szamuely_galois}.
 In this paragraph, we set $X = \mathbb{P}^1_\CC$, $D = \{s_1,\dots,s_k\} \subset X$ and $Y = X \setminus D$.\\
 We denote by $\holo_X(*D)$ the sheaf of meromorphic functions on $X$ with poles along $D$.
 
+
 \begin{mydef}
 Let $\bar{\erond}$ a locally free $\holo_X(*D)$-modules.\\
 A \textit{meromorphic connection} on $\bar{\erond}$ is a $\CC$-linear map $\bar{\nabla}:\bar{\erond} \to \bar{\erond} \tensor{\holo_X(*D)} \Omega^1_X$ satisfying the Liebniz rule.
 \end{mydef}
+
 
 \begin{mydef}
 We define the category $\locfree^{\bar{\nabla}}(X,D)$ with
@@ -214,6 +239,64 @@ We define the category $\locfree^{\bar{\nabla}}(X,D)$ with
 \item morphisms of $\holo_X(*D)$-modules commuting with the connections as morphisms.
 \end{itemize}
 \end{mydef}
+
+
+\begin{mytheo} \label{global_lifting_sheaf}
+Let $(\erond,\nabla)$ a holomorphic connection on $Y$.\\
+There exists regular meromorphic connection $(\bar{\erond},\bar{\nabla})$ on $X$ which agrees with $(\erond,\nabla)$ on $\De$. This connection is unique up to isomorphisms (of meromorphic connections).
+\end{mytheo}
+
+
+\begin{mydemo}
+Let $D_i$ small disks around each $s_i$ that do not meet. On each $D_i$, let $(\bar{\erond}_i,\bar{\nabla}_i)$ the unique (up to isomorphisms) lifting of $(\erond_i,\nabla_i) := (\erond,\nabla)|_{D_i}$ given by \ref{local_lifting_sheaf}. On an open set $U$ containing the complementary of $\bigcup_{i=1}^k D_i$ that does not meet $S$, we set $\bar{\erond} = \erond$.\\
+ Then, we can glue back the sheaves on $X = \bigcup_{i=1}^k D_i \cup U$ by \ref{patching_sheaf} (the isomorphisms $\theta_{i,j}$ are just given by the ones coming from the construction of the $\bar{\erond}_i$, and the triple intersection condition is empty), which gives us the sheaf $\bar{\erond}$ on $X$ that agrees with $\erond$ on $Y$.
+\end{mydemo}
+
+
+Now, we deal with morphisms :
+
+\begin{myprop}[\cite{HTT_dmodules}, Lemma 5.2.19]
+Let $\phi: (\erond_1,\nabla_1) \to (\erond_2,\nabla_2)$ a morphism between holomorphic connections on $Y$.\\
+Then, there exists a morphism of meromorphic connections $\bar{\phi} : (\bar{\erond}_1,\bar{\nabla}_1) \to (\bar{\erond}_2,\bar{\nabla}_2)$ on $X$ that restricts to $\phi$.
+\end{myprop}
+
+
+We need two intermediate result.\\
+
+\begin{mylemme}
+The restriction map given by \ref{global_lifting_sheaf} induces a bijection :
+\begin{center}
+$\Gamma(X, \Ker(\bar{\nabla})) \overset{\sim}{\longrightarrow} \Gamma(Y,\Ker(\nabla))$.
+\end{center}
+\end{mylemme}
+
+\begin{mydemo}
+The injectivity is clear. For the surjectivity, let $s \in \Gamma(Y,\Ker(\nabla))$. $\bar{\nabla}$ is regular, so $s$, a solution of the differential equation induced is single-valued as being defined on the whole of $Y$, and therefore has moderate growth - meaning that it can be extended to a meromorphic section on $D$. This concludes.
+\end{mydemo}
+
+
+This one follows the definition.
+
+\begin{mylemme}
+Let $(\bar{\erond}_1,\bar{\nabla}_1)$ and $(\bar{\erond}_2,\bar{\nabla}_2)$ two connections on $\De$.\\
+Then,
+\begin{center}
+$\Gamma(X,\connHom_{\holo_{X}(*D)}(\bar{\erond}_1,\bar{\erond}_2)^\nabla) \simeq \Hom_{\locfree^{\bar{\nabla}}(X,D)}((\bar{\erond}_1,\bar{\nabla}_1),(\bar{\erond}_2,\bar{\nabla}_2))$,
+\end{center}
+where the $\nabla$ on the left-hand side is the one associated to the sheaf $\connHom$ (see \ref{algebraic_construction_connection}).
+\end{mylemme}
+
+
+\begin{mydemo}[\ref{lifting_sheaf}]
+Set $\erond = \connHom_{\holo_Y}(\erond_1,\erond_2)$ and $\bar{\erond} = \connHom_{\holo_{X}(*S)}(\bar{\erond}_1,\bar{\erond}_2)$ with the associate $\nabla$ and $\bar{\nabla}$. By \ref{algebraic_regular_connection}, $\bar{\erond}$ is regular, so we can apply the first lemma. The second one thus gives a bijection :
+\begin{center}
+$\Hom((\bar{\erond}_1,\bar{\nabla}_1),(\bar{\erond}_2,\bar{\nabla}_2)) \simeq \Hom((\erond_1,\nabla_1),(\erond_2,\nabla_2))$,
+\end{center}
+the surjectivity of which ensures the result.
+\end{mydemo}
+
+
+
 
 \begin{mytheo}
 The restriction functor 
@@ -224,13 +307,12 @@ induces an equivalence of categories.
 \end{mytheo}
 
 \begin{mydemo}
-First, we construct the inverse morphism.
-
-\smallskip
-Let $D_i$ small disks around each $s_i$ that do not meet. On each $D_i$, let $(\bar{\erond}_i,\bar{\nabla}_i)$ the unique (up to isomorphisms) lifting of $(\erond_i,\nabla_i) := (\erond,\nabla)|_{D_i}$ given by \ref{lifting_sheaf}. On an open set $U$ containing the complementary of $\bigcup_{i=1}^k D_i$ that does not meet $S$, we set $\bar{\erond} = \erond$. Then, we can glue back the sheaves on $X = \bigcup_{i=1}^k D_i \cup U$ by \ref{patching_sheaf} (the isomorphisms $\theta_{i,j}$ are just given by the ones coming from the construction of the $\bar{\erond}_i$, and the triple intersection condition is empty), which gives us the sheaf $\bar{\erond}$ on $X$ that agrees with $\erond$ on $Y$.
+The pseudo-inverse functor is given by the construction above, and all the other verifications are clear.
 \end{mydemo}
 
+
 With the work done the previous subsection, we have the correspondence as wished :
+
 
 \begin{mycoro}[Riemann-Hilbert correspondence, meromorphic case, dimension 1]
 There is an equivalence of categories :
@@ -243,3 +325,5 @@ $\locfree^{\bar{\nabla}}(X,D) \cong \locsys(Y)$.
 
 
 \subsubsection{Sketch of a proof in higher dimension}
+
+bla
